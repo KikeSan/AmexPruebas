@@ -1,0 +1,38 @@
+.section{
+    text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3{
+    background-size: cover;
+}
+
+/* Defining each sectino background and styles 
+* --------------------------------------- */
+#section0{
+    
+}
+#section1{
+    background-image: url("../img/fondoHomeMobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;    
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
+
+@media(min-width: 1200px) {
+    #section0{
+    
+    }
+    
+}

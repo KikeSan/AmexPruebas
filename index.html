@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta name="viewport" content="user-scalable=no,initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Tarjeta de Crédito AMEX</title>
+	<meta name="author" content="Enrique Sánchez Q." />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">-->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/mainfont.min.css">
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>-->
+	<script type="text/javascript">!window.jQuery && document.write(unescape("%3Cscript src='js/jquery-1.10.1.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">!window.jQuery.ui && document.write(unescape("%3Cscript src='js/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script type="text/javascript" src='js/greensock/TweenMax.min.js'></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/mainMobile.js"></script>
+    
+</head>
+<body>
+<div class="warning">
+	<p class="aviso">Para una mejor experiencia gira tu dispositivo</p>
+	<img src="img/iconoMobile.png">
+</div>
+
+<div class="lightBox" id="cerrarVideo"></div>
+<div class="visorVideo">
+	<iframe id="elVideo" width="100%" height="100%" src="//www.youtube.com/embed/MBtfidpnEmU?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0&amp;html5=1&amp;allowfullscreen=true&amp;wmode=transparent&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<header class='cabecera'>
+    <img class="logo" src="img/logoHeader.png">
+</header>
+   
+<div class="abrirMenu"><i class="fa fa-bars fa-fw"></i></div>
+<div class="conteMenu">
+    <div class="fondomenu"></div>
+    <div class="redes">
+            <a href="#"><img src="img/icnFace.svg"></a>
+            <a href="#"><img src="img/icnTwit.svg"></a>
+            <a href="#"><img src="img/icnYout.svg"></a>
+        </div>
+    <div class="botonM" id="btnInicio">INICIO <i class="fa fa-angle-right fa-fw fa-lg"></i></div>
+    <div class="botonM" id="btnConoce" >CONOCE NUESTRAS TARJETAS <i class="fa fa-angle-right fa-fw fa-lg"></i></div>
+    <div class="separador"></div>
+    <a class="botonSolicita" href="#">SOLICITA TU TARJETA</a>
+    <p>American Express es una marca de American Express. Las tarjetas son emitidas por Interbank bajo licencia de American Express.</p>
+</div>  
+<div class="menuDerecha">
+    <div class="mitarjeta"><p>Mi Tarjeta</p><i id="activado" class="fa fa-dot-circle-o fa-fw"></i><i class="fa fa-circle-thin fa-fw"></i></div>
+    <div class="mivida"><p>Mi vida</p><i id="activado" class="fa fa-dot-circle-o fa-fw"></i><i class="fa fa-circle-thin fa-fw"></i></div>
+</div>
+<div id="fullpage">
+
+	<div class="section" id="section0">
+		
+		<ul class="categorias">
+			<li class="cat" id="cat_caminar">
+				<div class="velo"></div>
+				<h2 class="tituloReelDesk">Tarjeta American<br>Express®</h2>
+                <img src="img/card1.png" alt="American Express">
+			</li>
+			<li class="cat" id="cat_bailar">
+				<div class="velo"></div>
+				<h2 class="tituloReelDesk">Tarjeta American<br>Express® Gold</h2>
+				<img src="img/card2.png" alt="American Express Gold">
+			</li>
+			<li class="cat" id="cat_volar">
+				<div class="velo"></div>
+				<h2 class="tituloReelDesk">The Platinum Card® <br>American Express®</h2>
+				<img src="img/card3.png" alt="Platinum Card American Express">
+			</li>
+		</ul>
+	</div>
+	<div class="section" id="section1">
+		<div class="fondoSection"></div>
+        <div class="contenidos">
+            <h1 class="tituloHome">Tarjeta American Express® Gold.</h1>
+            <p class="parrafoHome">Compra y viaja con total confianza y comodidad.</p>
+            
+            <div class="menuTabs">
+                <div><img src="img/check.svg" alt="check"><p>Qué ventajas me ofrece la tarjeta  American Express® Gold</p></div>
+                <div><img src="img/check.svg" alt="check"><p>Además cuentas con los siguientes beneficios</p></div>
+                <div><img src="img/check.svg" alt="check"><p>Para solicitarla necesitas cumplir estos requisitos</p></div>
+            </div>
+            <div class="contenido1">
+                <img src="img/cGold.jpg" alt="American Express Gold">
+                <div>
+                    <ul class="fa-ul">
+                      <li><i class="fa-li fa fa-angle-right"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</li>
+                      <li><i class="fa-li fa fa-angle-right"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</li>
+                      <li><i class="fa-li fa fa-angle-right"></i>Paga tu Tarjeta en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</li>
+                      <li><i class="fa-li fa fa-angle-right"></i>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</li>
+                      <li><i class="fa-li fa fa-angle-right"></i>Compra por Internet con total seguridad. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+	<div class="botonBajar"><i id="flecha1" class="fa fa-chevron-down fa-fw fa-lg"></i><i id="flecha2" class="fa fa-chevron-down fa-fw fa-lg"></i></div>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="fondoVida"></div>
+		<h1 class="tituloHome">Tarjeta American Express</h1>
+
+<!--	<div class="botonBajar"><i id="flecha1" class="fa fa-chevron-down fa-fw fa-lg"></i><i id="flecha2" class="fa fa-chevron-down fa-fw fa-lg"></i></div>-->
+
+	</div>
+</div>
+
+</body>
+</html>

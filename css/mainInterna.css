@@ -1,0 +1,679 @@
+/* Smartphones (landscape) ----------- */
+@media(min-width: 50px) and (orientation : portrait) {
+/* Styles */
+	html, body{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.warning{display: block!important;}
+}
+
+@media(min-width: 720px) and (orientation : portrait) {
+/* Styles */
+	html, body{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	.warning{
+		width: 100%;
+		height: 100%;
+		background-color: red;
+		position: absolute;
+		z-index: 200;
+		display: none;
+		opacity: 0.9;
+	}
+
+	.warning > .aviso{
+		color: white;
+		margin: 120px auto!important;
+		width: 84%!important;
+		height: 120px;
+		text-align: center;
+		font-family: 'bree_peru_ltlight';
+		font-size: 64px!important;	
+	}
+
+	.warning > img{
+		width: 156px!important;
+		height: auto!important;
+		position: absolute;
+		left: 50%;
+		margin-left: -79px!important;
+		top: 384px!important;
+	}
+}
+
+.colapsa{
+	height:100%;
+	overflow:hidden!important;
+	position: relative;
+}
+
+.release{
+	height:auto;
+	overflow:auto;
+}
+
+.warning{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	position: absolute;
+	z-index: 200;
+	display: none;
+	opacity: 0.9;
+}
+
+.warning > .aviso{
+	color: white;
+	margin: 64px auto;
+	width: 45%;
+	height: 120px;
+	text-align: center;
+	font-family: 'bree_peru_ltlight';
+	font-size: 20px;	
+}
+
+.warning > img{
+	width: 56px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -29px;
+	top: 146px;
+}
+
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "bree_peruregular";
+	font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: bodrer-box;
+}
+
+.lightbox{
+	position: absolute;
+	z-index: 11;
+	height:100%;
+	width:100%;
+	opacity: 0;
+	background-color: black;
+	display: none;
+}
+
+.trama {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/trama1.gif");
+	position: absolute;
+	z-index: 1;
+	filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	display: none;
+}
+
+.visorVideo{
+	height: 80%;
+	position: absolute;
+	width: 70%;
+	left: 50%;
+	top: 50%;
+	margin-left: -35%;
+	/*margin-top: -18%;*/
+	display: none;
+}
+
+#elVideo{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+}
+
+video.videoLoop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	display: none;
+}
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+}
+
+.menuContextual{	
+	height: 100%;
+	width: 280px;
+	background-color: #ccc;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-transform: translateX(100%);
+}
+
+.open-slider .menuContextual {
+	-webkit-transform:translateX(0%);
+	transform:translateX(0%);
+	-moz-transform:translateX(0%);
+}
+
+.open-slider .wrapper {
+	-webkit-transform:translateX(-280px);
+	transform:translateX(-280px);
+	-moz-transform:translateX(-280px);
+}
+
+.listado{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+	bottom: 0;
+
+
+}
+
+.listado > li {	
+	width: 100%;
+	height: 25%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.listado > li > a{
+	text-align: center;
+	font-size: 2em;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.homeInterna{
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+
+	position: relative;
+}
+
+.homeInterna > .abrirMenu{
+	height: 57px;
+	width: 57px;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.abrirMenu > img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10px;
+}
+
+.openMenu{
+	display: none;
+}
+
+.homeInterna .titulo{
+	height: auto;
+	width: 60%;
+	color: white;
+	position: relative;
+	margin: 0px 0px 0px 16px;
+	padding-top: 16px;
+	font-size: 1.5em;
+	font-family: 'bree_peru_ltlight';
+	font-weight: normal;
+	text-shadow:#000 2px 2px 3px;
+}
+
+.homeInterna .parrafo{
+	width: 40%;
+	color: white;
+	position: relative;
+	font-size: 1.1em;
+	margin: 6px 0px 0px 17px;
+	font-family: 'bree_peru_ltlight';
+	font-weight: normal;
+	text-shadow:#000 2px 2px 3px;
+}
+
+.homeInterna > #botonPlay{
+	height: 62px;
+	width: 62px;
+	top: 50%;
+	left: 50%;
+	margin-left: -31px;
+	margin-top: -31px;
+	position: absolute;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.homeInterna > #footerInterno{
+	bottom: 0;
+	left: 50%;
+	width: 100%;
+	margin-left: -50%;
+	position: absolute;
+}
+
+
+.lugares{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+.lugares > h2{
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+	text-shadow:#000 2px 2px 3px;
+}
+
+.sitios{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+.sitio{
+	width: 50%;
+	padding: 10px;
+	float: left;
+	height: 225px;
+}
+
+.sitio > a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+.sitio > a >.imagen{
+	width: 100%;
+	height: 80%;
+}
+
+.sitio> a >.imagen{background-repeat: no-repeat;background-size:cover;background-position: center top;}
+
+.sitio > a > .label > h3{
+	color: white;
+	margin: 0;
+	margin-top: 8px;
+}
+
+.reels, .footer{
+	display: none;
+}
+
+.redes{
+	margin: 10px 0px 0px 14px;
+}
+
+/* ------------------------------------------ */
+/* ------------------ Tablets 820 min -- */
+/* ------------------------------------------ */
+@media(min-width: 820px) {
+
+	.homeInterna #footerInterno{
+		display: none;
+	}
+
+	.lugares{
+		display: none;
+	}
+
+	.homeInterna{
+		height: 100%;
+		position: relative;
+		margin-top: 0px;
+		overflow: hidden;
+	}
+
+	body, html{
+		overflow: hidden;
+		background-color: #ccc;
+	}
+
+	.wrapper{
+		height: 100%;
+		width: 100%;
+
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+
+		position: absolute;
+
+		overflow: hidden;
+	}
+
+	.menuContextual{
+		height: 100%;
+		width: 280px;
+		background-color: #ccc;
+		position: fixed;
+		right: 0;
+		top: 0px;
+
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		-moz-transform: translateX(100%);
+	}
+
+	.open-slider .menuContextual {
+		-webkit-transform:translateX(0%);
+		transform:translateX(0%);
+		-moz-transform:translateX(0%);
+	}
+
+	.open-slider .wrapper{
+		-webkit-transform:translateX(-280px);
+		transform:translateX(-280px);
+		-moz-transform:translateX(-280px);
+	}
+
+	.homeInterna .titulo{
+		width: 65%;
+		font-size: 2.3em;
+		margin-top: 32px;
+		margin-left: 32px;
+		text-shadow:#000 2px 2px 3px;
+	}
+
+	.homeInterna .parrafo{
+		width: 45%;
+		font-size: 1.2em;
+		margin-left: 32px;
+		text-shadow:#000 2px 2px 3px;
+	}	
+
+	.reels{
+		display: none;
+	}
+
+	.reels .reel{
+		height: 70px;
+		width: 70px;
+		position: relative;
+		margin-left: 160px;
+		list-style: none;
+	}
+
+	.reels .reel a{
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: relative;
+		text-decoration: none;
+	}
+
+	.equis{
+		height: 32px;
+		position: absolute;
+		width:32px;
+		left: 50%;
+		top: 50%;
+		margin-left: -16px;
+		margin-top: -16px;
+		display: none;
+	}
+
+	.flecha{
+		height: 32px;
+		position: absolute;
+		width:32px;
+		left: 50%;
+		top: 50%;
+		margin-left: -16px;
+		margin-top: -16px;
+		display: none;
+	}
+
+	.reels .reel > a > span{
+		text-align: center;
+		height: 32px;
+		width: 100%;
+		font-family: 'bree_perubold';
+		font-size: 36px;
+		margin-top: 27px;
+		color: white;
+		position: absolute;
+		opacity: 0;
+		top: -10px;
+	}
+
+	#rcerrar{background-color: red;}
+	#r1{background-color: #7ab800;}
+	#r2{background-color: #7d0063;}
+	#r3{background-color: #fdc82f;}
+	#r4{background-color: #0079c1;}
+
+	.abrirMenu{
+		display: block;
+		z-index: 100;
+	}
+
+	.footer{
+		height: 310px;
+		position: absolute;
+		bottom: -6px;
+		width: 1920px;
+		z-index: 5;
+		display: block;
+		left: 50%;
+		margin-left: -960px;
+
+	}
+
+	.footer img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.lugaresFooter{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		top: 90px;
+		left: 50%;
+		margin-left:-390px; 
+
+	}
+
+
+	.lugaresFooter .lugar{
+		height: 80px;
+		float: left;
+		width: 120px;
+		margin-right: 10px;
+	}
+
+	.tituloLista{
+		 color: white;
+		 font-family: 'bree_peru_ltlight';
+		 text-shadow: 1px 2px #000;
+		 font-size: 31px;
+		 margin-bottom: 4px;
+	}
+
+	.nombreLugar{
+		color: white;
+		font-family: 'bree_peru_ltlight';
+		text-shadow: 1px 2px #000;
+		font-size: 14px;
+	}
+
+	.lugar>a{
+	 text-decoration: none;
+	}
+
+	.redes{
+		margin: 10px 0px 0px 28px;
+	}
+
+	.redes>a>img{
+		width: 32px;
+		height: auto;
+	}
+
+}
+
+
+@media(min-width: 1200px) { 
+
+	.homeInterna{
+		background-image: none;
+	}
+
+	video.videoLoop {
+		display: block;
+	}
+
+    .trama {
+	  display: block;
+	}
+
+	.homeInterna .titulo{
+		width: 45%;
+		font-size: 2.8em;
+		z-index: 2;
+		margin-top: 46px;
+		margin-left: 40px;
+		text-shadow:#000 2px 2px 3px;
+	}
+
+	.homeInterna .parrafo{
+		width: 20%;
+		font-size: 1.6em;
+		z-index: 2;
+		margin-left: 40px;
+		text-shadow:#000 2px 2px 3px;
+	}
+
+	.nombreLugar{
+		font-size: 14px;
+	}
+
+	.redes{
+		margin: 10px 0px 0px 38px;
+		z-index: 3;
+		position: relative;
+	}
+
+	.redes>a>img{
+		width: 32px;
+		height: auto;
+	}
+
+	.reels{
+		 padding: 0;
+		 margin: 0;
+		 list-style: none;
+		 position: absolute;
+		 z-index: 10;
+		 right: 0;
+		 top: 0;
+		 width: 230px;
+		 display: block;
+	}
+
+	.abrirMenu{
+		display: none;
+	}
+}
+
+
+
+#lugcaminar #sitio1 > a > .imagen{background-image: url("../img/internas/1/1.jpg");}
+#lugcaminar #sitio2 > a > .imagen{background-image: url("../img/internas/1/2.jpg");}
+#lugcaminar #sitio3 > a > .imagen{background-image: url("../img/internas/1/3.jpg");}
+#lugcaminar #sitio4 > a > .imagen{background-image: url("../img/internas/1/4.jpg");}
+#lugcaminar #sitio5 > a > .imagen{background-image: url("../img/internas/1/5.jpg");}
+#lugcaminar #sitio6 > a > .imagen{background-image: url("../img/internas/1/6.jpg");}
+
+#lugcaminar{background-color: #7BB816;}
+
+#lugbailar #sitio1 > a > .imagen{background-image: url("../img/internas/2/1.jpg");}
+#lugbailar #sitio2 > a > .imagen{background-image: url("../img/internas/2/2.jpg");}
+#lugbailar #sitio3 > a > .imagen{background-image: url("../img/internas/2/3.jpg");}
+#lugbailar #sitio4 > a > .imagen{background-image: url("../img/internas/2/4.jpg");}
+#lugbailar #sitio5 > a > .imagen{background-image: url("../img/internas/2/5.jpg");}
+#lugbailar #sitio6 > a > .imagen{background-image: url("../img/internas/2/6.jpg");}
+
+#lugbailar{background-color: #7D0063;}
+
+#lugtiempo #sitio1 > a > .imagen{background-image: url("../img/internas/3/1.jpg");}
+#lugtiempo #sitio2 > a > .imagen{background-image: url("../img/internas/3/2.jpg");}
+#lugtiempo #sitio3 > a > .imagen{background-image: url("../img/internas/3/3.jpg");}
+#lugtiempo #sitio4 > a > .imagen{background-image: url("../img/internas/3/4.jpg");}
+#lugtiempo #sitio5 > a > .imagen{background-image: url("../img/internas/3/5.jpg");}
+#lugtiempo #sitio6 > a > .imagen{background-image: url("../img/internas/3/6.jpg");}
+
+#lugtiempo{background-color: #FDC82F;}
+
+#lugvolar #sitio1 > a > .imagen{background-image: url("../img/internas/3/1.jpg");}
+#lugvolar #sitio2 > a > .imagen{background-image: url("../img/internas/3/2.jpg");}
+#lugvolar #sitio3 > a > .imagen{background-image: url("../img/internas/3/3.jpg");}
+#lugvolar #sitio4 > a > .imagen{background-image: url("../img/internas/3/4.jpg");}
+#lugvolar #sitio5 > a > .imagen{background-image: url("../img/internas/3/5.jpg");}
+#lugvolar #sitio6 > a > .imagen{background-image: url("../img/internas/3/6.jpg");}
+
+#lugvolar{background-color: #0079C1;}
+
+@media(min-width: 1200px) { 
+	.homeInterna{
+		background-image: none !important;
+	}
+}

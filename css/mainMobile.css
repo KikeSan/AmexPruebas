@@ -1,0 +1,567 @@
+/* Smartphones (landscape) ----------- */
+@media(min-width: 50px) and (orientation : portrait) {
+/* Styles */
+	html, body{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	.warning{display: block!important;}
+}
+
+@media(min-width: 720px) and (orientation : portrait) {
+/* Styles */
+	html, body{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	.warning{
+		width: 100%;
+		height: 100%;
+		background-color: red;
+		position: absolute;
+		z-index: 200;
+		display: none;
+		opacity: 0.9;
+	}
+
+	.warning > .aviso{
+		color: white;
+		margin: 120px auto!important;
+		width: 84%!important;
+		height: 120px;
+		text-align: center;
+		font-family: 'bree_peru_ltlight';
+		font-size: 64px!important;	
+	}
+
+	.warning > img{
+		width: 156px!important;
+		height: auto!important;
+		position: absolute;
+		left: 50%;
+		margin-left: -79px!important;
+		top: 384px!important;
+	}
+}
+
+.warning{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	position: absolute;
+	z-index: 200;
+	display: none;
+	opacity: 0.9;
+}
+
+.warning > .aviso{
+	color: white;
+	margin: 64px auto;
+	width: 45%;
+	height: 120px;
+	text-align: center;
+	font-family: 'bree_peru_ltlight';
+	font-size: 20px;	
+}
+
+.warning > img{
+	width: 56px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -29px;
+	top: 146px;
+}
+
+video.videoLoop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.cabecera{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+}
+
+.cabecera>.logo{
+	right: 6px;
+	top: 8px;
+	width: 64px;
+	height: auto;
+	position: absolute;
+	background: none !important;
+}
+
+.cabecera>.orla{
+	margin-top: 32px;
+	width: 100%;
+	height: auto;
+}
+
+.tituloHome{
+	color: white;
+	position: absolute;
+	top: 64px;
+	left: 10px;
+	z-index: 2;
+	padding: 0!important;
+	margin: 0!important;
+	width: 100%!important;
+	font-size: 32px;
+	text-align: left;
+	font-family: 'bree_peru_ltlight';
+	font-weight: normal;
+	text-shadow:#000 2px 2px 3px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.parrafoHome{
+	color: white;
+	text-align: left;
+	font-family: 'bree_peru_ltlight';
+	font-size: 14px;
+	font-weight: normal;
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	z-index: 2;
+	width: 38%;
+	text-shadow:#000 2px 2px 3px;
+	display: none;
+}
+
+.redes{
+	text-align: left;
+	/*margin: 240px 0px 0px 6px;*/
+	z-index: 2;
+	position: absolute;
+	bottom: 4px;
+	left: 10px;
+}
+
+.redes>a>img{
+	width: 32px;
+	height: auto;
+}
+
+.tituloHome span{
+	font-family: 'bree_perubold';	
+}
+
+.subtitulo{
+	color: white;
+	font-family: 'bree_peru_ltlight';
+	font-size: 16px;
+	position: absolute;
+	top: 277px;
+	left: 40px;
+	width: 449px;
+	z-index: 2;
+}
+
+.negrita{
+	font-family: 'bree_perubold';
+}
+.categorias{
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.categorias li.cat{
+	float: left;
+	width: 50%;
+	height: 50%;
+	background-color: #ccc;
+	position: relative;
+}
+
+.categorias li.cat a{
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: block;
+	opacity: 0.6;
+	position: absolute;
+	text-indent:-999px;
+	opacity: 0;
+}
+
+
+.categorias li.cat img{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -50%;
+}
+
+.tituloReel{
+	font-size: 2em;	
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+	padding:0;
+	margin-top: 32px;
+}
+
+.tituloReelDesk{
+	display: none;
+}
+
+.botonSubir{
+	width: 98px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -49px;
+	z-index: 3;
+}
+
+.manito{
+	width:54px;
+	height: 55px;
+	position: absolute;
+	left: 50%;
+	margin-left: -27px;
+	bottom: 0px;
+	z-index: 6;
+}
+
+.viewVideo{
+	z-index: 5;
+	position: absolute;
+	width: 74px;
+	height:74px;
+	left: 50%;
+	top: 50%;
+	margin-left: -37px;
+	margin-top: -37px;
+	opacity: 1;
+}
+
+.lightBox{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	position: absolute;
+	top:0
+	left:0;
+	z-index: 10;
+	display: none;
+}
+
+.visorVideo{
+	height: 80%;
+	position: absolute;
+	width: 70%;
+	left: 50%;
+	top: 50%;
+	margin-left: -35%;
+	/*margin-top: -45%;*/
+	display: none;
+}
+
+#elVideo{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+}
+
+#cat_caminar{background-color: #79b943;}
+#cat_bailar{background-color: #7b2064;}
+#cat_volar{background-color: #fec92f;}
+#cat_viajar{background-color: #0a79bf;}
+
+.trama {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/trama1.gif");
+	position: absolute;
+	z-index: 1;
+	filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	display: none;
+}
+
+.botonBajar{display: none;}
+.descubre{display: none;}
+
+#fullPage-nav{
+	display: none!important;
+}
+
+.categorias > li> .velo{
+	display: none;
+}
+
+#botonCerrar{
+	width: 98px;
+	height: 50px;
+	top: 0px;
+	left: 50%;
+	margin-left: -48px;
+	position: absolute;
+	z-index: 30;
+	cursor: pointer;
+}
+
+#botonCerrar > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* Tablets */
+@media(min-width: 720px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .cabecera>.logo{
+		width: 120px;
+		height: auto;
+		right: 20px;
+		top: 24px;
+	}
+
+	.cabecera>.orla{
+		margin-top: 90px;
+	}
+
+	.trama{
+		display: block;
+	}
+
+	.tituloReel{
+		font-size: 4em;	
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+		margin-top: 120px;
+	}
+
+	.tituloHome{
+		top: 170px;
+		left: 10px;
+		z-index: 2;
+		font-size: 72px;
+		line-height: 60px;
+		text-align: left;
+		width: 60%!important;
+	}
+
+	.parrafoHome{
+		font-size: 26px;
+		top: 280px;
+		left: 10px;
+		width: 45%;
+		display: block;
+	}
+
+	.redes{
+		text-align: left;
+		left: 6px;
+	}
+
+	.redes>a>img{
+		width: 40px;
+		height: auto;
+	}
+}
+
+/* -------------------------------------- */
+/* ------------Desktop      ------------- */
+/* -------------------------------------- */
+
+@media(min-width: 1200px) {
+	.tituloHome{
+		top: 220px;
+		left: 32px;
+		z-index: 2;
+		font-size: 50px;
+		line-height: 45px;
+		width: 40%!important;
+	}
+
+	.parrafoHome{
+		font-size: 18px;
+		top: 310px;
+		left: 32px;
+		width: 35%;		
+	}
+
+	.redes{
+		text-align: left;
+		left: 6px;
+	}
+
+	.redes>a>img{
+		width: 40px;
+		height: auto;
+	}
+
+	.manito{
+		display: none;
+	}
+
+	.descubre{
+		bottom: 60px;
+		color: white;
+		text-align: center;
+		position: absolute;
+		font-family: 'bree_peru_ltlight';
+		font-size: 26px;
+		width: 100%;
+		z-index: 3;
+		font-size: 30px;
+		left: 0;
+		display: block;
+	}
+
+	.botonSubir{
+		display: none;
+	}
+
+	.botonBajar{
+		background-image: url("../img/btn_bajar.png");
+		bottom: 0px;
+		color: white;
+		cursor: pointer;
+		left: 50%;
+		margin-left: -49px;
+		position: absolute;
+		z-index: 3;
+		width: 98px;
+		height: 50px;
+		line-height: 30px;
+		border-radius: 30px 30px 0 0;
+		display: block;
+	}
+
+	.botonBajar a{
+		display: block;
+		text-decoration: none;
+	}
+
+	a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+	a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
+
+	.botonBajar img{
+		width: 36px;
+		height: auto;
+		position: absolute;
+		left: 50%;
+		margin-left: -18px;
+		top: 26px;
+	}
+
+	.categorias li.cat{		
+		width: 25%;
+		height: 100%;
+
+		overflow: hidden;
+		background-size:cover;
+		background-position: center top;
+	}
+
+	.categorias li.cat a{
+		text-indent:0;
+
+		background-color: red;
+		border-radius: 12px;
+		color: white;
+		display: block;
+		font-family: 'bree_peruregular';
+		font-size: 22px;
+		height: 50px;
+		line-height: 50px;
+		position: absolute;
+		opacity: 0;
+		text-decoration: none;
+		text-align: center;
+		top: 230px;
+		left: 64px;
+		width: 220px;
+		box-shadow: 1px 2px #000;
+	}
+
+
+	.categorias li.cat img{
+		display: none;
+	}
+
+
+	#cat_caminar{background-image: url(../img/fondo1.jpg);background-position: right top;}
+	#cat_bailar{background-image: url(../img/fondo2.jpg);}
+	#cat_volar{background-image: url(../img/fondo3.jpg);background-position: left top;}
+	#cat_viajar{background-image: url(../img/fondo4.jpg);}
+
+	.categorias > li> .velo{
+		height: 100%;
+		opacity: .5;
+		position: absolute;
+		width: 100%;
+		display: block;
+	}
+
+	.categorias > #cat_caminar > .velo{background-color: #7ab800;}
+	.categorias > #cat_bailar > .velo{background-color: #7d0063;}
+	.categorias > #cat_volar > .velo{background-color: #fdc82f;}
+	.categorias > #cat_viajar > .velo{background-color: #0079c1;}
+
+	.tituloReel{
+		display: none;
+	}
+
+	.tituloReelDesk{
+		display: block;
+		color: white;
+		font-size: 32px;
+		font-family: 'bree_perubold';
+		margin-left: 64px;
+		margin-top: 120px;
+		opacity: 0;
+		position: absolute;
+		text-shadow: 1px 2px #000;
+		width: 360px;
+		text-align: left;
+		font-weight: normal;
+	}
+
+	.subtit {
+		left: auto !important;
+		right: 0px !important;
+		bottom: 10px !important;
+		font-size: 17px !important;
+		font-family: 'bree_peruregular' !important;
+		margin: 0px 30px 0 0 !important;
+		text-align: right !important;
+	}
+
+
+
+}

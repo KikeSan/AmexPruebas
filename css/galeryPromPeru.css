@@ -1,0 +1,46 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+.sitios{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	background-color: Darkgreen;
+	overflow: hidden;
+}
+
+.sitio{
+	width: 50%;
+	padding: 10px;
+	float: left;
+	height: 120px;
+	background-color: plum;
+}
+
+.sitio > a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+.sitio > a >.imagen{
+	background-color: peru;
+	width: 100%;
+	height: 80%;
+}
+
+.sitio> a >.imagen{background-repeat: no-repeat;background-size:cover;background-position: center top;}
+
+.sitio > a > .label > h3{
+	margin: 0;
+}
