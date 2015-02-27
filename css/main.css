@@ -815,7 +815,7 @@ video.videoLoop {
 	text-align: left;
 	font-family: 'BentonSansCondMedium';
 	font-weight: normal;
-	text-shadow:#000 2px 2px 3px;
+/*	text-shadow:#000 2px 2px 3px;*/
 	line-height: 30px;
 	text-align: center;
 }
@@ -831,7 +831,7 @@ video.videoLoop {
 	left: 10px;
 	z-index: 2;
 /*	width: 38%;*/
-	text-shadow:#000 2px 2px 3px;
+/*	text-shadow:#000 2px 2px 3px;*/
 	display: none;
 }
 
@@ -1028,7 +1028,7 @@ video.videoLoop {
 /* Tablets */
 @media(min-width: 720px) {
     body {
-        background-color: lightblue;
+        background-color: #fff;
     }
 
     .cabecera>.logo{
@@ -1128,13 +1128,12 @@ video.videoLoop {
 		width: 22px;
 		height: auto;
 	}
-    
     .botonSolicita {
         width: 280px;
         height: 62px;
         color: #fff;
         background-color: #153370;
-        margin: 25px auto 15px auto;
+        margin: 35px auto;
         position: relative;
         display: block;
         line-height: 62px;
@@ -1142,20 +1141,28 @@ video.videoLoop {
         border-radius: 31px;
         font-family: 'BentonSansCondBold';
         font-size: 14px;
-        text-align: left;
+        text-align: center;
         text-decoration: none;
-        padding-left: 30px;
+    }
+    .botonSolicita:hover {
+        background-color: #001d4b;
+    }
+    .botonSolicita>i{
+        font-size: 20px;
+        font-weight: bold;
+        float: right;
+        margin: 22px 22px 22px 0px;
     }
     .botonM {
         width: 250px;
-        height: 62px;
+        height: 58px;
         color: #fff;
         margin: 25px auto 15px auto;
         position: relative;
         display: block;
-        line-height: 62px;
+        line-height: 58px;
         border: solid 2px #fff;
-        border-radius: 31px;
+        border-radius: 29px;
         font-family: 'BentonSansCondBold';
         font-size: 14px;
         text-align: left;
@@ -1203,6 +1210,7 @@ video.videoLoop {
         text-align: right;
         font-family: 'BentonSansExtraLight';
         z-index: 5;
+        margin-top: -30px;
     }
     .menuDerecha>div{
         padding: 20px 0 35px 0;
@@ -1277,7 +1285,7 @@ video.videoLoop {
 		top: 230px;
 		left: 64px;
 		width: 220px;
-		box-shadow: 1px 2px #000;
+/*		box-shadow: 1px 2px #000;*/
 	}
 
 
@@ -1286,7 +1294,7 @@ video.videoLoop {
         height: 205px;
         left: 50%;
         margin-left: -123px;
-        top: 50%;
+        top: 50% !important;
 	}
 
 
@@ -1339,7 +1347,7 @@ video.videoLoop {
         width: 100%;
         text-align: center;
         font-weight: normal;
-        top: 50%;
+        top: 50% !important;
         margin-top: -80px;
 	}
 
@@ -1352,8 +1360,19 @@ video.videoLoop {
 		margin: 0px 30px 0 0 !important;
 		text-align: right !important;
 	}
-
-
+    
+    .cerrarMenu {
+        width: 60px;
+        height: 60px;
+        /* background-color: #fff; */
+        color: #fff;
+        line-height: 60px;
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+        margin: 36px 0px 0px 0px;
+        font-size: 30px;
+    }
     .abrirMenu {
        width: 60px;
         height: 60px;
@@ -1432,7 +1451,8 @@ video.videoLoop {
         left: 50%;
         margin-top: -290px;
         margin-left: -490px;
-        border: solid 1px red;
+/*        border: solid 1px red;*/
+        text-align: left;
     }
     
     .menuTabs {
@@ -1466,25 +1486,139 @@ video.videoLoop {
         letter-spacing: -0.4px;
         width: 260px;
     }
-    
-    .contenido1 {
+    /*************** contenidos SECTION 1 **************/
+    .contenido1{
         width: 100%;
         height: 408px;
         text-align: left;
         font-size: 14px;
         font-family: 'BentonSansCondBook';
         color: white;
-        letter-spacing: -0.4px;
+        letter-spacing: -0.1px;
         float: left;
+        position: absolute;
     }
     .contenido1>img{
         margin: 21px 0 0 0;
         float: left;
     }
     .contenido1>div{
+        margin: 14px 0 0 13px;
+        float: left;
+    }
+    .contenido1>div>p{
+        margin: 9px 0 12px 0px;
+    }
+    /**/
+    .contenido2{
+        width: 100%;
+        height: 408px;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'BentonSansCondBook';
+        color: white;
+        letter-spacing: -0.1px;
+        float: left;
+        position: absolute;
+    }
+    .contenido2>img{
         margin: 21px 0 0 0;
         float: left;
     }
+    .contenido2>div{
+        margin: 14px 0 0 13px;
+        float: left;
+    }
+    .contenido2>div>p{
+        margin: 9px 0 12px 0px;
+    }
+    /**/
+    .contenido3{
+        width: 100%;
+        height: 408px;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'BentonSansCondBook';
+        color: white;
+        letter-spacing: -0.1px;
+        float: left;
+        position: absolute;
+    }
+    .contenido3>img{
+        margin: 21px 0 0 0;
+        float: left;
+    }
+    .contenido3>div{
+        margin: 14px 0 0 13px;
+        float: left;
+    }
+    .contenido3>div>p{
+        margin: 9px 0 12px 0px;
+    }
+    /*************** contenidos SECTION 2 ***********************/
+    .contenido1_S2{
+        width: 100%;
+        height: 408px;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'BentonSansCondBook';
+        color: white;
+        letter-spacing: -0.1px;
+        float: left;
+        position: absolute;
+    }
+    .contenido1_S2>img{
+        margin: 0;
+        float: left;
+    }
+    .contenido1_S2>.fotoC{
+        margin: 469px 0 0 0;
+        float: left;
+        position: absolute;
+        left: 0;
+        width: 203px;
+    }
+    .contenido1_S2>div{
+        margin: 330px 0 0 0px;
+        float: left;
+        position: absolute;
+    }
+    .contenido1_S2>.BotonAzul{
+        margin: 330px 0 0 0px;
+        /* float: left; */
+        position: relative;
+        left: 142px;
+        top: -35px;
+    }
+    .contenido1_S2>p{
+        width: 440px;
+        margin: 225px 0 12px 0px;
+        position: absolute;
+    }
+    .contenido1_S2>.parrafoHome{
+        width: 440px;
+        margin: 143px 0 12px 0px;
+        position: absolute;
+        left: 0;
+        font-size: 25px;
+    }
+    .contenido1_S2>h1{
+        font-size: 30px;
+        color: #fff;
+        line-height: 30px;
+        font-family: 'BentonSansCondMedium';
+        position: absolute;
+        left: 0;
+        top: 140px;
+    }
+    /************************************************************/
+    
+    .BotonAzul{
+        position: absolute;
+        right: 0px;
+        bottom: 60px;
+    }
+    
 
 }
 
