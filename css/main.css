@@ -1503,11 +1503,22 @@ video.videoLoop {
         float: left;
     }
     .contenido1>div{
-        margin: 14px 0 0 13px;
+        margin: 25px 0 0 25px;
         float: left;
+        width: 680px;
     }
     .contenido1>div>p{
-        margin: 9px 0 12px 0px;
+        margin: 0px 0 9px 0;
+        float: left;
+        width: 662px;
+    }
+    .contenido1>div>i{
+        float: left;
+          
+    }
+    .contenido1>.BotonAzul{
+        right: 0px;
+        width: 280px;
     }
     /**/
     .contenido2{
@@ -1525,12 +1536,37 @@ video.videoLoop {
         margin: 21px 0 0 0;
         float: left;
     }
-    .contenido2>div{
-        margin: 14px 0 0 13px;
+    .contenido2>.con2Scroll{
         float: left;
+        
+        overflow: auto;
+        position: absolute!important;
+        margin: 14px 0 0 13px !important;
+/*        width: 98%;*/
+        height: 250px;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        text-align: justify;
     }
-    .contenido2>div>p{
-        margin: 9px 0 12px 0px;
+    .contenido2 p{
+        margin: 0px 0 9px 0px;
+        float: left !important;
+        width: 910px;
+    }
+    .contenido2 a{
+        color: white;
+    }
+    .contenido2 .con2Scroll i{
+        float: left !important;
+          
+    }
+    .contenido2>.BotonAzul{
+        right: 0px;
+        width: 280px;
+        bottom: 15px;
+    }
+    .contenido2 .sangria{
+        left: 20px;
+        position: relative;
     }
     /**/
     .contenido3{
@@ -1544,16 +1580,52 @@ video.videoLoop {
         float: left;
         position: absolute;
     }
-    .contenido3>img{
+    .contenido3 img{
         margin: 21px 0 0 0;
-        float: left;
+        float: left !important;
     }
-    .contenido3>div{
-        margin: 14px 0 0 13px;
+    .contenido3>.con3Scroll{
         float: left;
+        
+        overflow: auto;
+        position: absolute!important;
+        margin: 14px 0 0 13px !important;
+/*        width: 98%;*/
+        height: 250px;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        text-align: justify;
     }
-    .contenido3>div>p{
-        margin: 9px 0 12px 0px;
+    .contenido3>.con3Scroll .divDerecha{
+        margin: 25px 0 0 25px;
+        float: left;
+        width: 642px;
+    }
+    .contenido3>.con3Scroll .divNormal>h2{
+        text-align: left;
+    }
+    .contenido3>.con3Scroll .divNormal>p{
+        margin: 0px 0 9px 0px;
+        float: left !important;
+        width: 920px;
+    }
+    .contenido3>.con3Scroll .divNormal{
+        margin: 25px 0 0 25px;
+        float: left;
+        width: 920px;
+    }
+    .contenido3 p{
+        margin: 0px 0 9px 0px;
+        float: left !important;
+        width: 620px;
+    }
+    .contenido3 .con3Scroll i{
+        float: left !important;
+          
+    }
+    .contenido3>.BotonAzul{
+        right: 0px;
+        width: 280px;
+        bottom: 15px;
     }
     /*************** contenidos SECTION 2 ***********************/
     .contenido1_S2{
@@ -1572,19 +1644,19 @@ video.videoLoop {
         float: left;
     }
     .contenido1_S2>.fotoC{
-        margin: 469px 0 0 0;
+        margin: 485px 0 0 0;
         float: left;
         position: absolute;
         left: 0;
         width: 203px;
     }
     .contenido1_S2>div{
-        margin: 330px 0 0 0px;
+        margin: 360px 0 0 0px;
         float: left;
         position: absolute;
     }
     .contenido1_S2>.BotonAzul{
-        margin: 330px 0 0 0px;
+        margin: 360px 0 0 0px;
         /* float: left; */
         position: relative;
         left: 142px;
@@ -1597,7 +1669,7 @@ video.videoLoop {
     }
     .contenido1_S2>.parrafoHome{
         width: 440px;
-        margin: 143px 0 12px 0px;
+        margin: 165px 0 12px 0px;
         position: absolute;
         left: 0;
         font-size: 25px;
@@ -1614,11 +1686,24 @@ video.videoLoop {
     /************************************************************/
     
     .BotonAzul{
-        position: absolute;
-        right: 0px;
+        position: absolute !important;
+        right: 225px;
         bottom: 60px;
     }
     
+    /*********** SCROLL  *********/
+    .contenidoScroll{
+        overflow: auto;
+        position: absolute!important;
+/*            padding: 20px;*/
+/*            background: #333;*/
+        margin: 115px 0px 0px 0px !important;
+        width: 590px;
+/*            max-width: 97%;*/
+        height: 220px;
+        -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        text-align: justify;
+    }
 
 }
 

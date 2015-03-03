@@ -3,6 +3,7 @@ var player;
 
 $(document).ready(function(){
     var unaSolaVez = 0;
+    localStorage.setItem("opTab", 1);
 //    $("#fullpage .section").bind("mousewheel", function() {return false;});
         
     $('.viewVideo').click(function() {
@@ -131,7 +132,8 @@ $(document).ready(function(){
         
         /***********************************************   TABS CONTENIDOS  ****************************************/
         var TabActual = 0;
-        pintaTab(1);
+//        pintaTab(1);
+        pintaTab(localStorage.getItem("opTab"));
         
         function pintaTab(tb){
             switch(op){
@@ -161,6 +163,7 @@ $(document).ready(function(){
                 $me.find('.contenido2').css('display', 'none');
                 $me.find('.contenido3').css('display', 'none');
             }
+            console.log("LOCALSTORAGE TAB: "+tb);
             TweenMax.to($('#section1 #info'+op+' .contenido'+TabActual), 0.3, {css:{'display':'none', opacity:0}, ease:Back.easeOut});
             TweenMax.to($('#section1 #info'+op+' .contenido'+tb), 0.5, {css:{'display':'block', opacity:1}, delay:0.3, ease:Back.easeOut});
             
@@ -190,9 +193,9 @@ $(document).ready(function(){
             
          }
         
-         $me.find('.menuTabs #1').click(function(){ if(TabActual!=1){ pintaTab(1); }});
-         $me.find('.menuTabs #2').click(function(){ if(TabActual!=2){ pintaTab(2); }});
-         $me.find('.menuTabs #3').click(function(){ if(TabActual!=3){ pintaTab(3); }});
+         $me.find('.menuTabs #1').click(function(){ if(TabActual!=1){ localStorage.setItem("opTab", 1);   pintaTab(1); }});
+         $me.find('.menuTabs #2').click(function(){ if(TabActual!=2){ localStorage.setItem("opTab", 2);   pintaTab(2); }});
+         $me.find('.menuTabs #3').click(function(){ if(TabActual!=3){ localStorage.setItem("opTab", 3);   pintaTab(3); }});
     }
     
     function irVida(opc){
@@ -290,7 +293,9 @@ $(document).ready(function(){
 		verticalCentered: true,
 		navigation: true,
 		anchors: ['home', 'perfiles','vida'],
+        
 	});
+    $.fn.fullpage.setAllowScrolling(false);
 
 });
 
