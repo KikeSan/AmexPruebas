@@ -1,0 +1,21 @@
+.simpleButtonImg{
+	position: relative;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin-left: 62px;
+    margin-top: 20px;
+}
+
+.simpleButtonImg img{
+	position: absolute;
+    width: 23px;
+}
+
+.simpleButtonImg .over, .simpleButtonImg .active{
+	opacity: 0;
+}
+
+.simpleButtonImg:hover{
+	cursor: pointer;
+};

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/mainfont.min.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+    
 		
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <!--	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>-->
@@ -23,6 +24,9 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/mainMobile.js"></script>
     
+    <!-- simpleButton -->
+	<link rel="stylesheet" type="text/css" href="css/simpleButton.css">
+	<script type="text/javascript" src='js/simpleButton.js'></script>
 </head>
 <body>
 <div class="warning">
@@ -43,11 +47,27 @@
 <div class="abrirMenu"><i class="fa fa-bars fa-fw"></i></div>
 <div class="conteMenu">
     <div class="fondomenu"></div>
-    <div class="redes">
-            <a href="#"><img src="img/icnFace.svg"></a>
-            <a href="#"><img src="img/icnTwit.svg"></a>
-            <a href="#"><img src="img/icnYout.svg"></a>
-        </div>
+    <div class="redesHeader">
+		    <div class="simpleButtonImg">
+		     <img class="base" src="img/icnFace.svg">
+		     <img class="over" src="img/icnFaceOver.svg">
+		    </div>
+
+		    <div class="simpleButtonImg">
+		     <img class="base" src="img/icnTwit.svg">
+		     <img class="over" src="img/icnTwitOver.svg">
+		    </div>
+
+		    <div class="simpleButtonImg">
+		     <img class="base" src="img/icnYout.svg">
+		     <img class="over" src="img/icnYoutOver.svg">
+		    </div>
+    </div>
+    <!--<div class="redes">
+            <div><img id="iFac" src="img/icnFace.svg"/><img id="iFacOver" src="img/icnFaceOver.svg"/></div>
+            <div><img id="iTwi" src="img/icnTwit.svg"></div>
+            <div><img id="iYou" src="img/icnYout.svg"></div>
+    </div>-->
     <div class="botonM" id="btnInicio">INICIO <i class="fa fa-angle-right fa-fw fa-lg"></i></div>
 <!--    <div class="botonM" id="btnConoce" >CONOCE NUESTRAS TARJETAS <i class="fa fa-angle-right fa-fw fa-lg"></i></div>-->
     <div class="separador"></div>
@@ -107,7 +127,40 @@
             <div class="contenido2">
 <!--                <div>-->
                 <div class="con2Scroll mCustomScrollbar">
-                    <h2>3.Pasaporte Amex:</h2>
+                    <h2>1. Programa de seguros:</h2>
+                    <i class="fa fa-angle-right fa-fw"></i><p><strong>Seguro de protección de compras:</strong></p>
+                    <p class="sangria">Compra con tranquilidad con tu tarjeta American Express® gracias al seguro de compra protegida en caso de robo o daño del bien. Tienes hasta 90 días después de haber realizado la compra para poder hacer uso de este seguro (el articulo tiene que haber sido comprado con la tarjeta). <br><br>
+Cobertura: US$ 1,000 por incidente y hasta US$ 5,000 por año.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p><strong>Seguro de viajes:</strong></p>
+                    <p class="sangria">Al pagar la totalidad de tu viaje con tu tarjeta American Express®, tú, tu conyugue e hijos menores de 23 años cuentan con un seguro en caso de muerte accidental o incapacidad permanente si estas viajando en avión, tren, barco o autobús.<br><br>
+Cobertura: hasta por US$ 250,000</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Encuentra más detalle de los seguros <a href="#">AQUÍ</a></p>
+                    
+                    <h2>2. Programa de Recompensas:</h2>
+                    <i class="fa fa-angle-right fa-fw"></i><p><strong>El programa de puntos más flexible de todo mercado.  Canjea puntos o millas con total facilidad.</strong></p>
+                    <p class="sangria">- Acumula 1 punto por cada S/.3.00.</p>
+                    <p class="sangria">- Tus Puntos Membership Rewards® nunca vencen mientras uses tu tarjeta.</p>
+                    <p class="sangria">- Las tarjetas adicionales también acumulan Puntos Membership Rewards® para el titular</p>
+                    
+                    <div class="vinetas">
+                        <p><i class="fa fa-plane fa-fw"></i>Viaja</p>
+                        <p>Transfiere tus puntos a millas de <br>Avianca y otras aerolíneas.</p>
+                    </div>
+                    <div class="vinetas">
+                        <p><i class="fa fa-gift fa-fw"></i>Canjear</p>
+                        <p>Ingresa a www.membershiprewards.pe <br>y descubre lo que puedes canjear</p>
+                    </div>
+                    <div class="vinetas">
+                        <p><i class="fa fa-money fa-fw"></i>Compra</p>
+                        <p>Usa tus puntos como efectivo en los <br>establecimientos asociados. </p>
+                    </div>
+                    
+                    <i class="fa fa-angle-right fa-fw"></i><p>Transfiere millas de las Aerolíneas: Taca, Avianca, KLM, Air France, Delta Airlines y Tam. Si no tienes tu número de pasajero frecuente solo debes inscribirte en sus páginas web, ¡no te tomará más de 10 minutos! Solo llama al (01) 311-9090</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Conoce los establecimientos afiliados para comprar con puntos <a href="#">AQUÍ</a></p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Para canjear productos y más entra a www.membershiprewards.pe, elige el producto que más te gusta y llama al  (01) 311-9090. <br>
+Para mayor información visita www.membershiprewards.pe.</p>
+                    
+                    <h2>3. Pasaporte Amex:</h2>
                     <i class="fa fa-angle-right fa-fw"></i><p>También te ofrecemos el “Pasaporte Amex “, un portal de American Express® que te brinda promociones especiales alrededor del mundo en restaurantes, hoteles, eventos y compras.<br>
 Descubre las ofertas que tenemos para ti en la web: <a href="#">www.pasaporteamex.com</a></p>
                     <i class="fa fa-angle-right fa-fw"></i><p><strong>Requisitos:</strong></p>
@@ -145,7 +198,9 @@ Descubre las ofertas que tenemos para ti en la web: <a href="#">www.pasaporteame
                         <p>Última boleta de pago si recibes un ingreso fijo ó 3 últimas si tu ingreso es variable.</p>
                         <h2>Independiente</h2>
                         <p>Dos (2) últimas declaraciones anuales de impuesto a la renta de 4ta categoría y recibos por honorarios profesionales y/o pagos a Sunat de los últimos 3 meses.</p>
-                        <p>Puedes usarla en toda la red de establecimientos American Express® alrededor del Mundo.</p>
+                        <p>Dos (2) últimas declaraciones juradas del impuesto a la renta, contratos de alquiler, copia de autovalúo o propiedad arrendada y 2 últimos pagos a la Sunat, si eres rentista.
+<br><br>
+Copia de la constitución de la empresa, última declaración jurada de la empresa o ficha registral, estado de cuenta corriente de la empresa y 3 últimos pagos de IGV, si eres accionista de una pequeña empresa.</p>
                     </div>
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
@@ -165,28 +220,88 @@ Descubre las ofertas que tenemos para ti en la web: <a href="#">www.pasaporteame
             <div class="contenido1">
                 <img src="img/cGold.png" alt="American Express Gold">
                 <div>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Paga tu Tarjeta en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Compra por Internet con total seguridad. </p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Puedes pagar tu Tarjeta por la banca por internet, banca móvil, en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Compra por Internet con total seguridad. </p>
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
             </div>
             <div class="contenido2">
-                <div>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Paga tu Tarjeta en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Compra por Internet con total seguridad. </p>
+                <div class="con2Scroll mCustomScrollbar">
+                    <h2>1. Programa de Recompensas:</h2>
+                    <p class="sangria">El programa de puntos más flexible de todo el mercado.  Canjea puntos o millas con total facilidad.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Acumula 1.5 punto por cada S/.3.00.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Tus Puntos Membership Rewards® nunca vencen mientras uses tu tarjeta.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Las tarjetas adicionales también acumulan Puntos Membership Rewards® para el titular.</p>
+                    
+                    <div class="vinetas">
+                        <p><i class="fa fa-plane fa-fw"></i>Viaja</p>
+                        <p>Transfiere tus puntos a millas de <br>Avianca y otras aerolíneas.</p>
+                    </div>
+                    <div class="vinetas">
+                        <p><i class="fa fa-gift fa-fw"></i>Canjear</p>
+                        <p>Ingresa a www.membershiprewards.pe <br>y descubre lo que puedes canjear</p>
+                    </div>
+                    <div class="vinetas">
+                        <p><i class="fa fa-money fa-fw"></i>Compra</p>
+                        <p>Usa tus puntos como efectivo en los <br>establecimientos asociados. </p>
+                    </div>
+                    
+                    <i class="fa fa-angle-right fa-fw"></i><p>Transfiere millas de las Aerolíneas: Taca, Avianca, KLM, Air France, Delta Airlines y Tam. Si no tienes tu número de pasajero frecuente solo debes ingresar a sus páginas web e inscribirte, no te tomará más de 10 minutos!. Sólo llama al (01) 311-9090</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Conoce los establecimientos afiliados para comprar con puntos <a href="#">AQUÍ</a></p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Para canjear productos y más entra a www.membershiprewards.pe, elige el producto que más te gusta y llama al  (01) 311-9090. <br>
+Para mayor información visita www.membershiprewards.pe.</p>
+                    
+                    <h2>2. Programa de seguros:</h2>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Seguro de protección de compras: <br>
+Compra con tranquilidad con tu tarjeta American Express®  Gold gracias al seguro de compra protegida en caso de robo o daño del bien. <br>Tienes hasta 90 días después de haber realizado la compra para poder hacer uso de este seguro (el articulo tiene que haber sido comprado con la tarjeta). <br>
+Cobertura: US$ 1,000 por incidente y hasta US$ 5,000 por año.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Seguros de viajes:<br>
+Al pagar la totalidad de tu viaje con tu tarjeta American Express ® Gold, tú, tu conyugue e hijos menores de 23 años cuentan con un seguro en caso de muerte accidental o incapacidad permanente si estas viajando en avión, tren, barco o autobús.<br>
+Cobertura: hasta por US$ 500,000 <br>
+Además cuentas con estos seguros:</p>
+                   <div class="tablaIzq">
+                       <i class="fa fa-angle-right fa-fw"></i><p><strong>Asistente de viajes</strong></p><br><br>
+                       <p class="conSpace">Pérdida de equipaje</p>
+                        <p class="conSpace">Demora e equipaje</p>
+                        <p class="conSpace">Seguro de vehículo alquilado (CDW)</p>
+                    </div>
+                    <div class="tablaDer">
+                       <i class="fa fa-angle-right fa-fw"></i><p><strong>US$ 10,000</strong></p><br><br>
+                        <p class="conSpace">US$ 1,000</p>
+                        <p class="conSpace">US$ 200</p>
+                        <p class="conSpace">Mundial: US$ 50,000</p>
+                    </div>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Encuentra más detalle de los seguros <a href="#">AQUí</a></p>
+                   <h2>3. Pasaporte Amex:</h2>
+                    <p>También te ofrecemos el “Pasaporte Amex “, un portal de American Express ® Gold que te brinda promociones especiales alrededor del mundo en restaurantes, hoteles, eventos y compras. <br>
+                        Descubre las ofertas que tenemos para ti en la web: <a href="#">www.pasaporteamex.com</a></p>
+               
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
             </div>
             <div class="contenido3">
-                <div>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
+                <div class="con3Scroll mCustomScrollbar">
+                    <img src="img/cGold.png" alt="American Express">
+                    <div class="divDerecha">
+                        <i class="fa fa-angle-right fa-fw"></i><p>Tener entre 21 y 75 años de edad.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Ingreso bruto mínimo mensual personal de S/. 4,000.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Más de 6 meses de experiencia crediticia con buen comportamiento de pago.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Antigüedad laboral mayor a un (1) año.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Fotocopia de documento de identidad.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Último recibo de pago de luz cancelado.</p>
+                    </div>
+                    <div class="divNormal">
+                        <p>Además, si eres:</p>
+                        <h2>Dependiente</h2>
+                        <p>Última boleta de pago si recibes un ingreso fijo ó 3 últimas si tu ingreso es variable.</p>
+                        <h2>Independiente</h2>
+                        <p>Dos (2) últimas declaraciones anuales de impuesto a la renta de 4ta categoría y recibos por honorarios profesionales y/o pagos a Sunat de los últimos 3 meses.</p>
+                        <p>Dos (2) últimas declaraciones juradas del impuesto a la renta, contratos de alquiler, copia de autovalúo o propiedad arrendada y 2 últimos pagos a la Sunat, si eres rentista.</p>
+                        <p>Copia de la constitución de la empresa, última declaración jurada de la empresa o ficha registral, estado de cuenta corriente de la empresa y 3 últimos pagos de IGV, si eres accionista de una pequeña empresa.</p>
+                    </div>
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
             </div>
@@ -205,28 +320,107 @@ Descubre las ofertas que tenemos para ti en la web: <a href="#">www.pasaporteame
             <div class="contenido1">
                 <img src="img/cPlat.png" alt="The platinum Card American Express">
                 <div>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Paga tu Tarjeta en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Compra por Internet con total seguridad. </p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Puedes usarla en toda la red de establecimientos American Express® alrededor del Mundo.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Diferentes formas de pago: Al contado, pagando el mínimo o hasta en 36 cuotas fijas.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Puedes pagar tu Tarjeta por la banca por internet, banca móvil, en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Compra por Internet con total seguridad. </p>
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
             </div>
             <div class="contenido2">
-                <div>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Paga tu Tarjeta en la red de tiendas Interbank a nivel nacional, cajas de Vivanda, Plaza Vea y en los cajeros Plus Global Net.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Solicita hasta 8 tarjetas adicionales de manera gratuita y elige el límite de crédito de cada una.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Compra por Internet con total seguridad. </p>
+                <div class="con2Scroll mCustomScrollbar">
+                    <h2>1. Servicio Concierge:</h2>
+                    <p class="sangria">The Platinum Card® de American Express®  busca hacerte la vida más fácil, por eso pone a tu disposición la unidad de Servicio Concierge, un asistente personal las 24 horas del día que cuida de todos los detalles como si lo hicieras tú mismo, brindándote soporte y las mejores alternativas de acuerdo a tus necesidades. Este servicio te ofrece organizar todo lo que necesitas, sea por falta de tiempo, expertise o contactos en los siguientes rubros: Viajes, Gastronomía, Entretenimiento, Compras y Elite Sports.
+Accede a este servicio llamando al 311-9090 lima y 0-801-00-101 provincias</p>
+                    <h2>2. Programa de Recompensas:</h2>
+                    <i class="fa fa-angle-right fa-fw"></i><p>El programa de puntos más flexible de todo el mercado.  Canjea puntos o millas con total facilidad.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>El programa de puntos más prestigioso y flexible de todo el mercado.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Acumula 2 puntos por cada S/.3.00.</p>
+                    
+                    <div class="vinetas">
+                        <p><i class="fa fa-plane fa-fw"></i>Viaja</p>
+                        <p>Transfiere tus puntos a millas de <br>Avianca y otras aerolíneas.</p>
+                    </div>
+                    <div class="vinetas">
+                        <p><i class="fa fa-gift fa-fw"></i>Canjear</p>
+                        <p>Ingresa a www.membershiprewards.pe <br>y descubre lo que puedes canjear</p>
+                    </div>
+                    <div class="vinetas">
+                        <p><i class="fa fa-money fa-fw"></i>Compra</p>
+                        <p>Usa tus puntos como efectivo en los <br>establecimientos asociados. </p>
+                    </div>
+                    
+                    <i class="fa fa-angle-right fa-fw"></i><p>Puedes transferir a millas de las Aerolíneas: Taca, Avianca, KLM, Air France, Delta Airlines y Tam. Si no tienes tu número de pasajero frecuente solo debes inscribirte en sus páginas web, ¡no te tomará más de 10 minutos! Solo llama al (01) 311-9090</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Conoce los establecimientos afiliados para comprar con puntos <a href="#">AQUÍ</a></p>
+                    <i class="fa fa-angle-right fa-fw"></i><p>Para canjear productos y más entra a www.membershiprewards.pe, elige el producto que más te gusta y llama al  (01) 311-9090. <br>
+Para mayor información visita www.membershiprewards.pe.</p>
+                    <h2>3. Programa de seguros:</h2>
+                    <i class="fa fa-angle-right fa-fw"></i><p><strong>Seguro de protección de compras:</strong></p>
+                    <p class="sangria">Compra con tranquilidad con The Platinum Card® de American Express®  gracias al seguro de compra protegida en caso de robo o daño del bien. <br>Tiene hasta 90 días después de haber realizado la compra para poder hacer uso de este seguro (el articulo tiene que haber sido comprado con la tarjeta). <br>
+Cobertura: US$ 5,000 por incidente, hasta US$ 5,000 por año.</p>
+                    <i class="fa fa-angle-right fa-fw"></i><p><strong>Seguros de viajes:</strong></p>
+                    <p class="sangria">Al pagar la totalidad de tu viaje con tu tarjeta The Platinum Card® American Express®, tú, tu conyugue e hijos menores de 23 años cuentan con un seguro en caso de muerte accidental o incapacidad permanente si estas viajando en avión, tren, barco o autobús. <br>
+Cobertura: hasta por US$1´000,000 <br><br>
+Además cuentas con estos seguros:</p>
+                    
+                    <div class="tablaIzq">
+                       <i class="fa fa-angle-right fa-fw"></i><p><strong>Accidentes en viajes</strong></p>
+                       <i class="fa fa-angle-right fa-fw"></i><p><strong>Asistente de viajes</strong></p><br><br><br><br>
+                       <p class="conSpace">Pérdida de equipaje</p>
+                        <p class="conSpace">Demora e equipaje</p>
+                        <p class="conSpace">Demora de vuelo</p>
+                        <p class="conSpace">Pérdida de conexión</p>
+                        <p class="conSpace">Cancelación de viajes</p>
+                        <p class="conSpace">Seguro de vehículo alquilado (CDW)</p>
+                    </div>
+                    <div class="tablaDer">
+                       <i class="fa fa-angle-right fa-fw"></i><p><strong>US$ 1'000,000</strong></p>
+                   
+                       <i class="fa fa-angle-right fa-fw"></i><p><strong>Europa (Tratado Schengen): US$ 30,000</strong></p><br><br>
+                        <p class="conSpace"><strong>Mundial: US$ 150,000</strong></p><br><br>
+                        <p class="conSpace">US$ 3,000</p>
+                        <p class="conSpace">US$ 500</p>
+                        <p class="conSpace">US$ 200</p>
+                        <p class="conSpace">US$ 200</p>
+                        <p class="conSpace">US$ 2,000</p>
+                        <p class="conSpace"><strong>Mundial: US$ 75,000</strong></p>
+                    </div>
+                   
+                    <i class="fa fa-angle-right fa-fw"></i><p>Encuentra más detalle de los seguros <a href="#">AQUí</a></p>
+                    <br>
+                    <h2>4. PriorityPass:</h2>
+                    <p class="sangria">Disfruta del confort y tranquilidad de los más de 700 salones VIP en aeropuertos del extranjero y del Espigón Internacional del Aeropuerto Jorge Chavez* gracias a tu Priority Pass. 
+Puedes usar este servicio las veces que quieras sin costo alguno junto con un acompañante. Para acceder al beneficio de manera gratuita solo necesitas consumir con su TC los 6 meses previos a la visita de los salones VIP.  Para mayor información sobre condiciones, horarios y beneficios de cada sala VIP, entra a www.prioritypass.com. 
+Para el caso de las salas de vuelos nacionales dentro de Perú, el ingreso tiene un cargo de US$ 27.   </p>
+                    <h2>5.Acceso a salones American Express®</h2>
+                    <p class="sangria">Podrás acceder a los salones exclusivos para clientes American Express® en los aeropuertos de Estados Unidos, Argentina, Brasil, India y México.
+                    <h2>6.Pasaporte Amex: </h2>
+                    <p class="sangria">También te ofrecemos el “Pasaporte Amex “, un portal de American Express que te brinda promociones especiales alrededor del mundo en restaurantes, hoteles, eventos y compras. 
+<br>Descubre las ofertas que tenemos para ti en la web: <a href="#">www.pasaporteamex.com</a></p>
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
             </div>
             <div class="contenido3">
-                <div>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Úsala en toda la red de establecimientos American Express® alrededor del Mundo.</p>
-                    <p><i class="fa fa-angle-right fa-fw"></i>Diferentes formas de pago: al contado, pagando el mínimo o hasta en 36 cuotas fijas. Consultar tarifario.</p>
+               <div class="con3Scroll mCustomScrollbar">
+                    <img src="img/cPlat.png" alt="American Express">
+                    <div class="divDerecha">
+                        <i class="fa fa-angle-right fa-fw"></i><p>Tener entre 21 y 75 años de edad.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Ingreso bruto mínimo mensual personal de S/. 4,000.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Más de 6 meses de experiencia crediticia con buen comportamiento de pago.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Antigüedad laboral mayor a un (1) año.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Fotocopia de documento de identidad.</p>
+                        <i class="fa fa-angle-right fa-fw"></i><p>Último recibo de pago de luz cancelado.</p>
+                    </div>
+                    <div class="divNormal">
+                        <p>Además, si eres:</p>
+                        <h2>Dependiente</h2>
+                        <p>Última boleta de pago si recibes un ingreso fijo ó 3 últimas si tu ingreso es variable.</p>
+                        <h2>Independiente</h2>
+                        <p>Dos (2) últimas declaraciones anuales de impuesto a la renta de 4ta categoría y recibos por honorarios profesionales y/o pagos a Sunat de los últimos 3 meses.</p>
+                        <p>Dos (2) últimas declaraciones juradas del impuesto a la renta, contratos de alquiler, copia de autovalúo o propiedad arrendada y 2 últimos pagos a la Sunat, si eres rentista. </p>
+                        <p>Copia de la constitución de la empresa, última declaración jurada de la empresa o ficha registral, estado de cuenta corriente de la empresa y 3 últimos pagos de IGV, si eres accionista de una pequeña empresa.</p>
+                    </div>
                 </div>
                 <div class="BotonAzul"><div class="botonSolicita">SOLICITA TU TARJETA<i class="fa fa-angle-right fa-fw fa-lg"></i></div></div>
             </div>

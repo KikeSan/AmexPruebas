@@ -1116,7 +1116,7 @@ video.videoLoop {
         position: relative;
         top: -65px;
 	}
-    .redes>a{
+    .redes>div{
         margin-right: 45px;
         width: 22px;
         height: auto;
@@ -1124,10 +1124,26 @@ video.videoLoop {
         float: left;
         top: -65px;
     }
-	.redes>a>img{
+	.redes>div>img{
 		width: 22px;
 		height: auto;
 	}
+    
+    
+    .redesHeader{
+		width: 350px;
+        height: 72px;
+        /* right: 30px; */
+        /* float: right; */
+        /* display: block; */
+        /* position: absolute; */
+        text-align: center;
+        margin: -88px 0 0 0px;
+        /* left: 115px; */
+        /* padding-left: 50px; */
+	}
+    
+    
     .botonSolicita {
         width: 280px;
         height: 62px;
@@ -1532,6 +1548,13 @@ video.videoLoop {
         float: left;
         position: absolute;
     }
+    .contenido2 h2{
+        margin: 15px 0px 15px 0px !important;
+        width: 910px;
+        display: -webkit-box;
+        position: relative;
+        top: 8px;
+    }
     .contenido2>img{
         margin: 21px 0 0 0;
         float: left;
@@ -1548,7 +1571,7 @@ video.videoLoop {
         text-align: justify;
     }
     .contenido2 p{
-        margin: 0px 0 9px 0px;
+        margin: 0px 0px 0px 0px;
         float: left !important;
         width: 910px;
     }
@@ -1564,9 +1587,12 @@ video.videoLoop {
         width: 280px;
         bottom: 15px;
     }
+    
     .contenido2 .sangria{
-        left: 20px;
+        left: 18px;
         position: relative;
+        width: 920px;
+        margin: 3px 10px 0px 0px;
     }
     /**/
     .contenido3{
@@ -1589,7 +1615,7 @@ video.videoLoop {
         
         overflow: auto;
         position: absolute!important;
-        margin: 14px 0 0 13px !important;
+        margin: 14px 0 0 0px !important;
 /*        width: 98%;*/
         height: 250px;
         -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
@@ -1602,6 +1628,7 @@ video.videoLoop {
     }
     .contenido3>.con3Scroll .divNormal>h2{
         text-align: left;
+        margin: 30px 0 2px 0;
     }
     .contenido3>.con3Scroll .divNormal>p{
         margin: 0px 0 9px 0px;
@@ -1609,12 +1636,12 @@ video.videoLoop {
         width: 920px;
     }
     .contenido3>.con3Scroll .divNormal{
-        margin: 25px 0 0 25px;
+        margin: 25px 0px 0px 0px;
         float: left;
         width: 920px;
     }
     .contenido3 p{
-        margin: 0px 0 9px 0px;
+        margin: 0px 0 10px 0px;
         float: left !important;
         width: 620px;
     }
@@ -1626,6 +1653,45 @@ video.videoLoop {
         right: 0px;
         width: 280px;
         bottom: 15px;
+    }
+    
+    .tablaIzq{
+        width: 250px;
+        float: left;
+        margin: 15px 0 15px 0;
+    }
+    .tablaIzq>p{
+        width: 220px;
+    }
+    .tablaIzq>.conSpace{
+        width: 100%;
+        margin-left: 18px;
+    }
+    .tablaDer{
+        width: 670px;
+        float: left;
+        margin: 15px 0 15px 0;
+    }
+    .tablaDer>p{
+        width: 640px;
+    }
+    .tablaDer>.conSpace{
+        width: 100%;
+        margin-left: 18px;
+    }
+    .vinetas{
+        float: left;
+        margin: 10px 0px 15px 20px;
+        padding-right: 5px;
+        width: 30.5%;
+    }
+    .vinetas>p:first-child{
+        font-family: 'BentonSansCondMedium';
+        font-size: 20px;
+        margin: 0 0 10px 0;
+    }
+    .vinetas>p>i{
+        margin: 0 10px 0 0;
     }
     /*************** contenidos SECTION 2 ***********************/
     .contenido1_S2{

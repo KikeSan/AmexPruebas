@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>Red de Ganadores</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<style type="text/css">
+        body{
+            background-image: url(img/vida1.jpg);
+        }
+        .content{
+            overflow: auto;
+            position: relative;
+/*            padding: 20px;*/
+/*            background: #333;*/
+/*            margin: 10px;*/
+            width: 590px;
+/*            max-width: 97%;*/
+            height: 220px;
+            -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        }
+
+        /*.content.hidden{ display: none; }
+
+        .content.light{
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .content hr{
+            margin-bottom: -10px;
+            border-top: 1px solid rgba(0,0,0,0.7);
+        }
+
+        .content.light hr{
+            border-bottom: 1px solid rgba(255,255,255,0.6);
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .content p{ margin: 30px 0; }
+
+        .content p:last-child{ margin-bottom: 5px; }
+
+        .content p:nth-child(odd), .content.light p:nth-child(odd){
+            background: #444;
+            background: rgba(255,255,255,0.1);
+            padding: 5px 10px;
+            -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+        }
+
+        .content p:nth-child(3n+3){
+            color: #bbb;
+            background: none;
+            padding: 0;
+        }
+
+        .content.light p:nth-child(odd){
+            background: #fff;
+            background: rgba(255,255,255,0.8);
+        }
+
+        .content.light p:nth-child(3n+3){ color: #666; }
+
+        .content p.full:nth-child(odd), .content p.half:nth-child(odd), 
+        .content p.full:nth-child(3n+3), .content p.half:nth-child(3n+3){
+            background: none;
+            padding: 0;
+        }
+
+        .content h2{
+            font-size: 200%;
+            line-height: 130%;
+        }
+
+        .content h2:first-child{ margin-top: 5px; }
+
+        .content:nth-child(odd) h2{
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        hr + .content:nth-child(odd) h2{
+            font-family: "Lobster Two", "Georgia", serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .content.light h2{ color: inherit; }
+
+        .content img{
+            margin: 0;
+            -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+            padding: 3px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .content.light img{ background: rgba(255,255,255,0.4); }
+
+        .content input[type='text'], .content textarea{
+            border: none;
+            background: transparent;
+            background-color: #bbb;
+            background-color: rgba(255,255,255,0.6);
+            min-height: 20px;
+            padding: 5px;
+            -moz-box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+            -webkit-box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+            box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+            -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+            width: 50%;
+            font-size: inherit;
+            font-family: inherit;
+            color: #222;
+        }
+
+        .content textarea{
+            min-height: 80px;
+            width: 70%;
+        }
+
+        .content .half img{
+            max-width: 48%;
+            margin: 0 0 2% 2%;
+        }
+
+        .content .half img:nth-child(odd){ margin: 0 2% 2% 0; }*/
+	</style>
+	
+	
+
+</head>
+<body>
+                        <div class="content mCustomScrollbar">
+							<h4>Requisitos para que los videos sean considerados válidos</h4>
+							<p>Para que las opciones se hagan válidas o efectivas, pasarán previamente por un filtro por parte de los administradores del sitio, donde se revisará que cumplan con con algunos requisitos. </p>
+							<p>El video que del participante debe respetar los siguientes requisitos para que sea considerado como válido: </p>
+							<ul class="mb">
+								<li>El video debe ser propio</li>
+								<li>El usuario se responsabiliza que los demás participantes del video acepten su exposición.</li>
+								<li>El uso de un lenguaje socialmente aceptable (respetando reglas básicas de decoro y moral).</li>
+								<li>Tener una calidad minina de 1200x720 </li>
+								<li>La temática debe ser sí o sí Disfrute de tiempo.</li>
+							</ul>
+							<p class="mb"><strong>IMPORTANTE:</strong> Es responsabilidad del participante el correcto registro y  veracidad de sus datos.</p>
+							<h4>¿Cuál es la mecánica del concurso?</h4>
+							<p>Los usuarios deberán seguir los siguientes pasos para poder concursar en el Comercial más largo 
+								del mundo:</p>
+							
+							<h4>El video será válido cuando:</h4>
+							<p class="mb">Un video es válida si cumple el reglamento y es aprobado y publicado por el administrador de la Web.</p>
+							<h4>Precisiones:</h4>
+							<ul>
+								<li>Interbank no se responsabiliza por los videos cargados. El usuario está aceptando las condiciones de carga.</li>
+								<li>Interbank carece de injerencia o influencia sobre los videos o  comentarios publicados.</li>
+								<li>Interbank se reserva el derecho de eliminar los videos o comentarios que transgredan los códigos básicos de ética y de nuestras marcas o canales.</li>
+								<li>Todas los videos deben respetar los derechos de terceros (derechos autor y propiedad intelectual), bajo toda circunstancia.</li>
+							</ul>
+							<p class="mb"><strong>IMPORTANTE:</strong> Es responsabilidad del participante el correcto registro y  veracidad de sus datos.</p>
+							<h4>¿Cuál es la mecánica del concurso?</h4>
+							<p>Los usuarios deberán seguir los siguientes pasos para poder concursar en el Comercial más largo 
+								del mundo:</p>
+							
+							<h4>El video será válido cuando:</h4>
+							<p class="mb">Un video es válida si cumple el reglamento y es aprobado y publicado por el administrador de la Web.</p>
+							<h4>Precisiones:</h4>
+							<ul>
+								<li>Interbank no se responsabiliza por los videos cargados. El usuario está aceptando las condiciones de carga.</li>
+								<li>Interbank carece de injerencia o influencia sobre los videos o  comentarios publicados.</li>
+								<li>Interbank se reserva el derecho de eliminar los videos o comentarios que transgredan los códigos básicos de ética y de nuestras marcas o canales.</li>
+								<li>Todas los videos deben respetar los derechos de terceros (derechos autor y propiedad intelectual), bajo toda circunstancia.</li>
+							</ul>
+						</div>
+						
+						<script>
+		(function($){
+			$(window).load(function(){
+				
+				$("#content-1").mCustomScrollbar({
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+	</script>
+    </body>
+</html>

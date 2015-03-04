@@ -3,8 +3,14 @@ var player;
 
 $(document).ready(function(){
     var unaSolaVez = 0;
+    var repInterna = 0;
+    var TabPrev = 0;
     localStorage.setItem("opTab", 1);
 //    $("#fullpage .section").bind("mousewheel", function() {return false;});
+    
+    /******** REDES SOCIALES *************/
+    
+    /******************/
         
     $('.viewVideo').click(function() {
         var $anchoVideo = $('.visorVideo').height();
@@ -48,6 +54,7 @@ $(document).ready(function(){
     
     function irHome(){
         unaSolaVez = 0;
+        repInterna = 0;
         /*for(var i=1;i<=3;i++){
             $('#fullpage #section2 #c'+i).css('opacity', '0');
         }*/
@@ -57,16 +64,19 @@ $(document).ready(function(){
     //imagen 1 ****
     $('#cat_caminar').hover(function(){   document.body.style.cursor='pointer';   }, function(){    document.body.style.cursor='default';   })
     $('#cat_caminar').click(function() {
+//        TabPrev = 0;
         irInterna(1);
     });
     //imagen 2 ****
     $('#cat_bailar').hover(function(){   document.body.style.cursor='pointer';   }, function(){    document.body.style.cursor='default';   })
     $('#cat_bailar').click(function() {
+//        TabPrev = 0;
         irInterna(2);
     });
     //imagen 3 ****
     $('#cat_volar').hover(function(){   document.body.style.cursor='pointer';   }, function(){    document.body.style.cursor='default';   })
     $('#cat_volar').click(function() {
+//        TabPrev = 0;
         irInterna(3);
     });
     
@@ -88,6 +98,7 @@ $(document).ready(function(){
             TweenMax.to($('.menuDerecha > div:last-child p'), 0.4, {opacity:0, ease:Expo.easeOut});
         })
     $('.menuDerecha div:last-child i').click(function() {
+        repInterna = 0;
         irVida(localStorage.getItem("opcion"));
     }); 
 
@@ -95,7 +106,8 @@ $(document).ready(function(){
 
     $('.botonBajar').click(function() {
 //        console.log('desde el botonbajar va: '+localStorage.getItem("opcion")+' id:'+$(this).attr('class'))
-         irVida(localStorage.getItem("opcion"));
+        repInterna = 0;
+        irVida(localStorage.getItem("opcion"));
     });    
     $('.botonBajar').hover(function(){   
             $me = $(this);
@@ -106,98 +118,126 @@ $(document).ready(function(){
             TweenMax.to($me, 0.4, {scale:1, ease:Back.easeOut});
             TweenMax.to($me.find('#flecha2'), 0.4, {opacity:0, ease:Expo.easeOut});
         })  
-
-    function irInterna(op){
-        localStorage.setItem("opcion", op);
-        console.log('op--> '+op);
-        $('.fondoSection').css('background-image', 'url(img/wall'+op+'.jpg)');
-        window.location.href = '#perfiles'; 
-        
-        $me = $('#section1 #info'+op);
-        
-        for(var j=1;j<=3;j++){
-                $('#section1 #info'+j).css('display', 'none');
-        } 
-        
-        TweenMax.to($me, 0, {css: { marginTop: 0, opacity:0 }});
-        TweenMax.to($me, 0.5, {css: {'display':'block', marginTop: -290, opacity:1 }, delay:0.7, ease:Power3.easeOut});
-        /*TweenMax.to($('#section1 .contenidos'), 0, {css: { marginTop: 0, opacity:0 }});
-        TweenMax.to($('#section1 .contenidos'), 0.5, {css: { marginTop: -290, opacity:1 }, delay:0.7, ease:Power3.easeOut});*/
-        
-        TweenMax.to($('.menuDerecha').find($('div p')), 0.5, {css:{opacity:0}});
-        TweenMax.to($('.menuDerecha'), 0.5, {css: { right: 60 }, delay:0.8, ease:Power1.easeOut});
-        
-        TweenMax.to($('.menuDerecha div:first-child #activado'), 0.5, {css:{opacity:1}});
-        TweenMax.to($('.menuDerecha div:last-child #activado'), 0.5, {css:{opacity:0}});
-        
-        /***********************************************   TABS CONTENIDOS  ****************************************/
-        var TabActual = 0;
-//        pintaTab(1);
-        pintaTab(localStorage.getItem("opTab"));
-        
-        function pintaTab(tb){
-            switch(op){
-                case 1: $me.find('.menuTabs #'+tb).css('border-color', 'rgba(169,238,159, 0.5)'); 
-                        $me.find('.menuTabs div').css('border-color', 'rgba(169,238,159, 0.5)');
-                        $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(146,205,137, 0.5)');
-                        TweenMax.to($('#section1 #info'+op+' .menuTabs #'+TabActual), 0.6, {css:{'backgroundColor':'rgba(146,205,137, 0)'}, ease:Expo.easeOut});
-                        $me.find('.tituloHome').css('color', '#92cd89');
-                        break;
-                case 2: $me.find('.menuTabs #'+tb).css('border-color', 'rgba(241,206,122, 0.5)'); 
-                        $me.find('.menuTabs div').css('border-color', 'rgba(241,206,122, 0.5)');
-                        $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(227,179,79, 0.5)');
-                        TweenMax.to($('#section1 #info'+op+' .menuTabs #'+TabActual), 0.6, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut});
-                        $me.find('.tituloHome').css('color', '#f1ce7a');
-                        break;
-                case 3: $me.find('.menuTabs #'+tb).css('border-color', 'rgba(255,255,255, 0.5)'); 
-                        $me.find('.menuTabs div').css('border-color', 'rgba(255,255,255, 0.5)'); 
-                        $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(204,204,204, 0.5)');
-                        TweenMax.to($('#section1 #info'+op+' .menuTabs #'+TabActual), 0.6, {css:{'backgroundColor':'rgba(204,204,204, 0)'}, ease:Expo.easeOut});
-                        $me.find('.tituloHome').css('color', '#a1a1a1');
-                        break;
-            }
-//            $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(227,179,79, 0.5)');
-//            TweenMax.to($me.find('.menuTabs #'+TabActual), 0.6, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut});
-            document.body.style.cursor='default';
-            if(TabActual==0){
-                $me.find('.contenido2').css('display', 'none');
-                $me.find('.contenido3').css('display', 'none');
-            }
-            console.log("LOCALSTORAGE TAB: "+tb);
-            TweenMax.to($('#section1 #info'+op+' .contenido'+TabActual), 0.3, {css:{'display':'none', opacity:0}, ease:Back.easeOut});
-            TweenMax.to($('#section1 #info'+op+' .contenido'+tb), 0.5, {css:{'display':'block', opacity:1}, delay:0.3, ease:Back.easeOut});
-            
-            TabActual = tb;
-            
-            
-            $me.find('.menuTabs div').hover(function(){   
-                    $me = $(this);  
-                    if($(this).attr('id')!=TabActual){
-                        document.body.style.cursor='pointer'; 
-                        switch(op){
-                            case 1: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(146,205,137, 0.5)'}, ease:Expo.easeOut}); break;
-                            case 2: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(227,179,79, 0.5)'}, ease:Expo.easeOut}); break;
-                            case 3: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(204,204,204, 0.5)'}, ease:Expo.easeOut}); break;
-                        }
-                    }
-                }, function(){    
-                    if($(this).attr('id')!=TabActual){
-                        document.body.style.cursor='default';
-                         switch(op){
-                            case 1: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(146,205,137, 0)'}, ease:Expo.easeOut}); break;
-                            case 2: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut}); break;
-                            case 3: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(204,204,204, 0)'}, ease:Expo.easeOut}); break;
-                        }
-                    }
-                })  
-            
-         }
-        
-         $me.find('.menuTabs #1').click(function(){ if(TabActual!=1){ localStorage.setItem("opTab", 1);   pintaTab(1); }});
-         $me.find('.menuTabs #2').click(function(){ if(TabActual!=2){ localStorage.setItem("opTab", 2);   pintaTab(2); }});
-         $me.find('.menuTabs #3').click(function(){ if(TabActual!=3){ localStorage.setItem("opTab", 3);   pintaTab(3); }});
-    }
     
+    function irInterna(op){
+        if(repInterna==0){
+            localStorage.setItem("opcion", op);
+//            console.log('op--> '+op);
+            $('.fondoSection').css('background-image', 'url(img/wall'+op+'.jpg)');
+            window.location.href = '#perfiles'; 
+
+            $me = $('#section1 #info'+op);
+
+            for(var j=1;j<=3;j++){
+                    $('#section1 #info'+j).css('display', 'none');
+            } 
+
+            TweenMax.to($me, 0, {css: { marginTop: 0, opacity:0 }});
+            TweenMax.to($me, 0.5, {css: {'display':'block', marginTop: -290, opacity:1 }, delay:0.7, ease:Power3.easeOut});
+            /*TweenMax.to($('#section1 .contenidos'), 0, {css: { marginTop: 0, opacity:0 }});
+            TweenMax.to($('#section1 .contenidos'), 0.5, {css: { marginTop: -290, opacity:1 }, delay:0.7, ease:Power3.easeOut});*/
+
+            TweenMax.to($('.menuDerecha').find($('div p')), 0.5, {css:{opacity:0}});
+            TweenMax.to($('.menuDerecha'), 0.5, {css: { right: 60 }, delay:0.8, ease:Power1.easeOut});
+
+            TweenMax.to($('.menuDerecha div:first-child #activado'), 0.5, {css:{opacity:1}});
+            TweenMax.to($('.menuDerecha div:last-child #activado'), 0.5, {css:{opacity:0}});
+
+            /***********************************************   TABS CONTENIDOS  ****************************************/
+
+    //        pintaTab(localStorage.getItem("opTab"));
+
+            function pintaTab(tb,opc){
+                console.log("OPC en pintaTab: "+opc);
+                
+                /*switch(opc){
+                    case 1: $me.find('.menuTabs #'+tb).css('border-color', 'rgba(169,238,159, 0.5)'); 
+                            $me.find('.menuTabs div').css('border-color', 'rgba(169,238,159, 0.5)');
+                            $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(146,205,137, 0.5)');
+                            if(TabPrev!=tb){TweenMax.to($('#section1 #info'+opc+' .menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(146,205,137, 0)'}, ease:Expo.easeOut});}
+                            $me.find('.tituloHome').css('color', '#92cd89');
+                            break;
+                    case 2: $me.find('.menuTabs #'+tb).css('border-color', 'rgba(241,206,122, 0.5)'); 
+                            $me.find('.menuTabs div').css('border-color', 'rgba(241,206,122, 0.5)');
+                            $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(227,179,79, 0.5)');
+                            if(TabPrev!=tb){TweenMax.to($('#section1 #info'+opc+' .menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut});}
+                            $me.find('.tituloHome').css('color', '#f1ce7a');
+                            break;
+                    case 3: $me.find('.menuTabs #'+tb).css('border-color', 'rgba(255,255,255, 0.5)'); 
+                            $me.find('.menuTabs div').css('border-color', 'rgba(255,255,255, 0.5)'); 
+                            $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(204,204,204, 0.5)');
+                            if(TabPrev!=tb){TweenMax.to($('#section1 #info'+opc+' .menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(204,204,204, 0)'}, ease:Expo.easeOut});}
+                            $me.find('.tituloHome').css('color', '#a1a1a1');
+                            break;
+                }*/
+                
+                if(opc==1){
+                    $me.find('.menuTabs #'+tb).css('border-color', 'rgba(169,238,159, 0.5)'); 
+                    $me.find('.menuTabs div').css('border-color', 'rgba(169,238,159, 0.5)');
+                    $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(146,205,137, 0.5)');
+                    if(TabPrev!=tb){TweenMax.to($('#section1 #info'+opc+' .menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(146,205,137, 0)'}, ease:Expo.easeOut});}
+                    $me.find('.tituloHome').css('color', '#92cd89');
+                }else if(opc==2){
+                    $me.find('.menuTabs #'+tb).css('border-color', 'rgba(241,206,122, 0.5)'); 
+                    $me.find('.menuTabs div').css('border-color', 'rgba(241,206,122, 0.5)');
+                    $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(227,179,79, 0.5)');
+                    if(TabPrev!=tb){TweenMax.to($('#section1 #info'+opc+' .menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut});}
+                    $me.find('.tituloHome').css('color', '#f1ce7a');
+                }else if(opc==3){
+                    $me.find('.menuTabs #'+tb).css('border-color', 'rgba(255,255,255, 0.5)'); 
+                    $me.find('.menuTabs div').css('border-color', 'rgba(255,255,255, 0.5)'); 
+                    $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(204,204,204, 0.5)');
+                    if(TabPrev!=tb){TweenMax.to($('#section1 #info'+opc+' .menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(204,204,204, 0)'}, ease:Expo.easeOut});}
+                    $me.find('.tituloHome').css('color', '#a1a1a1');
+                }
+    //            $me.find('.menuTabs #'+tb).css('backgroundColor', 'rgba(227,179,79, 0.5)');
+    //            TweenMax.to($me.find('.menuTabs #'+TabPrev), 0.6, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut});
+                document.body.style.cursor='default';
+                if(tb==1){
+                    $me.find('.contenido2').css('display', 'none');
+                    $me.find('.contenido3').css('display', 'none');
+                }
+                console.log("LOCALSTORAGE TAB: "+tb+" TabPrev:"+TabPrev);
+                
+                TweenMax.to($('#section1 #info'+opc+' .contenido'+TabPrev), 0.3, {css:{'display':'none', opacity:0}, ease:Back.easeOut});
+                TweenMax.to($('#section1 #info'+opc+' .contenido'+tb), 0.5, {css:{'display':'block', opacity:1}, delay:0.3, ease:Back.easeOut});
+
+                TabPrev = tb;
+
+
+                $me.find('.menuTabs div').hover(function(){   
+                        $me = $(this);  
+                        if($(this).attr('id')!=TabPrev){
+                            document.body.style.cursor='pointer'; 
+                            switch(opc){
+                                case 1: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(146,205,137, 0.5)'}, ease:Expo.easeOut}); break;
+                                case 2: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(227,179,79, 0.5)'}, ease:Expo.easeOut}); break;
+                                case 3: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(204,204,204, 0.5)'}, ease:Expo.easeOut}); break;
+                            }
+                        }
+                    }, function(){    
+                        if($(this).attr('id')!=TabPrev){
+                            document.body.style.cursor='default';
+                             switch(opc){
+                                case 1: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(146,205,137, 0)'}, ease:Expo.easeOut}); break;
+                                case 2: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(227,179,79, 0)'}, ease:Expo.easeOut}); break;
+                                case 3: TweenMax.to($me, 0.4, {css:{'backgroundColor':'rgba(204,204,204, 0)'}, ease:Expo.easeOut}); break;
+                            }
+                        }
+                    })  
+
+             }
+            
+             pintaTab(1,op);
+
+             $me.find('.menuTabs #1').click(function(){ if(TabPrev!=1){ /*localStorage.setItem("opTab", 1);*/   pintaTab(1,op); }});
+             $me.find('.menuTabs #2').click(function(){ if(TabPrev!=2){ /*localStorage.setItem("opTab", 2);*/   pintaTab(2,op); }});
+             $me.find('.menuTabs #3').click(function(){ if(TabPrev!=3){ /*localStorage.setItem("opTab", 3);*/   pintaTab(3,op); }});
+            
+            repInterna = 1;
+        }
+    }
+
     function irVida(opc){
 //        localStorage.removeItem("opcion");
         if(unaSolaVez==0){
@@ -217,8 +257,15 @@ $(document).ready(function(){
             TweenMax.to($('#section2 #c'+opc), 0, {css: { marginTop: 0, opacity:0 }});
             TweenMax.to($('#section2 #c'+opc), 0.5, {css: { marginTop: -290, opacity:1 }, delay:0.7, ease:Power3.easeOut});
 
+             $('#section2 #c'+opc+'>div>.botonM').hover(function(){   
+                    document.body.style.cursor='pointer';
+                    $(this).css('backgroundColor', 'rgba(83,83,83, 0.3)'); 
+                }, function(){    
+                    document.body.style.cursor='default';   
+                    $(this).css('backgroundColor', 'rgba(83,83,83, 0)'); 
+             })
+            
             TweenMax.to($('.menuDerecha').find($('div p')), 0.5, {css:{opacity:0}});
-
             TweenMax.to($('.menuDerecha div:first-child #activado'), 0.5, {css:{opacity:0}});
             TweenMax.to($('.menuDerecha div:last-child #activado'), 0.5, {css:{opacity:1}});
 
