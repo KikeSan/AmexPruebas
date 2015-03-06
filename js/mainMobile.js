@@ -80,7 +80,7 @@ $(document).ready(function(){
         irInterna(3);
     });
     
-    $('.menuDerecha div:first-child i').hover(function(){   
+    $('.menuDerecha div:first-child img').hover(function(){   
             document.body.style.cursor='pointer'; 
             TweenMax.to($('.menuDerecha > div:first-child p'), 0.4, {opacity:1, ease:Expo.easeOut});
 
@@ -89,7 +89,7 @@ $(document).ready(function(){
             TweenMax.to($('.menuDerecha > div:first-child p'), 0.4, {opacity:0, ease:Expo.easeOut});
         })
     //-------------------------------------------------------
-    $('.menuDerecha div:last-child i').hover(function(){   
+    $('.menuDerecha div:last-child img').hover(function(){   
             document.body.style.cursor='pointer'; 
             TweenMax.to($('.menuDerecha > div:last-child p'), 0.4, {opacity:1, ease:Expo.easeOut});
 
@@ -97,7 +97,7 @@ $(document).ready(function(){
             document.body.style.cursor='default';   
             TweenMax.to($('.menuDerecha > div:last-child p'), 0.4, {opacity:0, ease:Expo.easeOut});
         })
-    $('.menuDerecha div:last-child i').click(function() {
+    $('.menuDerecha div:last-child img').click(function() {
         repInterna = 0;
         irVida(localStorage.getItem("opcion"));
     }); 
@@ -142,6 +142,9 @@ $(document).ready(function(){
 
             TweenMax.to($('.menuDerecha div:first-child #activado'), 0.5, {css:{opacity:1}});
             TweenMax.to($('.menuDerecha div:last-child #activado'), 0.5, {css:{opacity:0}});
+            
+            TweenMax.to($('.menuDerecha div:first-child #normal'), 0.5, {css:{opacity:0}});
+            TweenMax.to($('.menuDerecha div:last-child #normal'), 0.5, {css:{opacity:1}});
 
             /***********************************************   TABS CONTENIDOS  ****************************************/
 
@@ -268,9 +271,12 @@ $(document).ready(function(){
             TweenMax.to($('.menuDerecha').find($('div p')), 0.5, {css:{opacity:0}});
             TweenMax.to($('.menuDerecha div:first-child #activado'), 0.5, {css:{opacity:0}});
             TweenMax.to($('.menuDerecha div:last-child #activado'), 0.5, {css:{opacity:1}});
+            
+            TweenMax.to($('.menuDerecha div:first-child #normal'), 0.5, {css:{opacity:1}});
+            TweenMax.to($('.menuDerecha div:last-child #normal'), 0.5, {css:{opacity:0}});
 
             TweenMax.to($('.menuDerecha').find($('div:first-child p')), 0, {css:{opacity:0}});
-            $('.menuDerecha div:first-child i').hover(function(){   
+            $('.menuDerecha div:first-child img').hover(function(){   
                     document.body.style.cursor='pointer'; 
                     TweenMax.to($('.menuDerecha > div:first-child p'), 0.4, {opacity:1, ease:Expo.easeOut});
 
@@ -279,7 +285,7 @@ $(document).ready(function(){
                     TweenMax.to($('.menuDerecha > div:first-child p'), 0.4, {opacity:0, ease:Expo.easeOut});
                 })
 
-            $('.menuDerecha div:first-child i').click(function() {
+            $('.menuDerecha div:first-child img').click(function() {
                 unaSolaVez = 0;
                 irInterna(localStorage.getItem("opcion"));
             });
@@ -345,6 +351,11 @@ $(document).ready(function(){
     $.fn.fullpage.setAllowScrolling(false);
 
 });
+
+/********** ACORDEON ************/
+
+
+/*********************************/
 
 function onYouTubePlayerAPIReady() {
 	player = new YT.Player('elVideo', {

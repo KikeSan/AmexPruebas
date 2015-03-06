@@ -1236,9 +1236,10 @@ video.videoLoop {
         float: left;
         margin: auto;
     }
-    .menuDerecha>div>i{
+    .menuDerecha>div>img{
         position: absolute;
         right: 7px;
+        margin: 2px 0 0 4px;
     }
 	.botonBajar{
 /*		background-image: url("../img/btn_bajar.png");*/
@@ -1770,6 +1771,9 @@ video.videoLoop {
         -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
         text-align: justify;
     }
+    
+    /******* ACORDEON ********/
+    
 
 }
 
