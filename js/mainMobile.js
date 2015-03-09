@@ -314,7 +314,7 @@ $(document).ready(function(){
 	var $cat = $categorias.find($('.cat'));
 	var $irA = $cat.find($('img'));
 
-	if ($widthDevice > 1190) {
+	if ($widthDevice > 1199) {
 
         $time = 0.64;
         TweenMax.to($cat.find($('h2')), 0, {css:{opacity:0}});
@@ -340,7 +340,34 @@ $(document).ready(function(){
 			TweenMax.to($me.find($('img')), 0.4, {css:{scale:1, marginTop:0}, ease:Back.easeOut});
 			TweenMax.to($me.find($('.velo')), $time, {css:{opacity:1}});
 		});
-	};
+	}
+    if ($widthDevice < 1200) {
+
+        $time = 0.64;
+        TweenMax.to($cat.find($('h2')), 0, {css:{opacity:0}});
+        TweenMax.to($cat.find($('h2')), $time, {css:{opacity:1}});
+        TweenMax.from($cat.find($('h2')), $time, {css:{marginTop:-150}, ease:Power1.easeOut});	
+        TweenMax.to($cat.find($irA), 0, {css:{opacity:0}});
+        TweenMax.to($cat.find($irA), $time, {css:{opacity:1}, delay:0.2});
+        TweenMax.from($cat.find($irA), $time, {css:{marginTop:150}, ease:Back.easeOut, delay:0.2});
+
+		/*$cat.hover(function(){
+			$me = $(this);
+			TweenMax.to($cat, $time, {css:{height:'30%'}});
+			TweenMax.to($me, $time, {css:{height:'40%'}});
+            
+			TweenMax.to($me.find($('img')), 0.4, {css:{scale:1.2, marginTop:20}, ease:Back.easeOut});
+
+			TweenMax.to($me.find($('.velo')), $time, {css:{opacity:0},onComplete:function(){
+			}});
+
+		}, function(){
+			$me = $(this);
+			TweenMax.to($cat, $time, {css:{height:'33.33%'}});
+			TweenMax.to($me.find($('img')), 0.4, {css:{scale:1, marginTop:0}, ease:Back.easeOut});
+			TweenMax.to($me.find($('.velo')), $time, {css:{opacity:1}});
+		});*/
+	}
 
 	$('#fullpage').fullpage({
 		verticalCentered: true,
@@ -348,7 +375,7 @@ $(document).ready(function(){
 		anchors: ['home', 'perfiles','vida'],
         
 	});
-    $.fn.fullpage.setAllowScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false); //Deshabilita el scroll del mouse
 
 });
 

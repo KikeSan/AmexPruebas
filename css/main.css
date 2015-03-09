@@ -674,15 +674,15 @@ table {
 /* Smartphones (landscape) ----------- */
 @media(min-width: 50px) and (orientation : portrait) {
 /* Styles */
-	html, body{
+	/*html, body{
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
 	}
-	.warning{display: block!important;}
+	.warning{display: block!important;}*/
 }
 @media(min-width: 450px) and (max-width: 660px) and (orientation : landscape) {
-	.orla{
+	/*.orla{
 		display: none;
 	}
 	.tituloHome{
@@ -697,11 +697,11 @@ table {
 	}
 	.tituloReel{
 		font-size: 2em !important;
-	}
+	}*/
 }
 @media(min-width: 720px) and (orientation : portrait) {
 /* Styles */
-	html, body{
+	/*html, body{
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
@@ -735,7 +735,7 @@ table {
 		left: 50%;
 		margin-left: -79px!important;
 		top: 384px!important;
-	}
+	}*/
 }
 
 .warning{
@@ -788,12 +788,12 @@ video.videoLoop {
 }
 
 .cabecera>.logo{
-	right: 6px;
-	top: 8px;
-	width: 64px;
-	height: auto;
+	right: 16px;
+	top: 18px;
+	width: 156px;
+	height: 25px;
 	position: absolute;
-	background: none !important;
+	background-image: url(../img/mobile/logoHeader.png);
 }
 
 .cabecera>.orla{
@@ -815,7 +815,6 @@ video.videoLoop {
 	text-align: left;
 	font-family: 'BentonSansCondMedium';
 	font-weight: normal;
-/*	text-shadow:#000 2px 2px 3px;*/
 	line-height: 30px;
 	text-align: center;
 }
@@ -830,14 +829,18 @@ video.videoLoop {
 	top: 110px;
 	left: 10px;
 	z-index: 2;
-/*	width: 38%;*/
-/*	text-shadow:#000 2px 2px 3px;*/
 	display: none;
+}
+
+.redesHeader{
+    width: 350px;
+    height: 72px;
+    text-align: center;
+    margin: -88px 0 0 0px;
 }
 
 .redes{
 	text-align: center;
-	/*margin: 240px 0px 0px 6px;*/
 	z-index: 2;
 	position: absolute;
 	bottom: 10px;
@@ -968,7 +971,6 @@ video.videoLoop {
 	left: 50%;
 	top: 50%;
 	margin-left: -35%;
-	/*margin-top: -45%;*/
 	display: none;
 }
 
@@ -978,11 +980,70 @@ video.videoLoop {
 	width: 100%;
 	z-index: 30;
 }
+.categorias li.cat{		
+    height: 33.33%;
+    width: 100%;
 
-#cat_caminar{background-color: grey;}
-#cat_bailar{/*background-color: #7b2064;*/}
-#cat_volar{background-color: grey;}
-#cat_viajar{background-color: #0a79bf;}
+    overflow: hidden;
+    background-size:cover;
+    background-position: center top;
+}
+
+.categorias li.cat a{
+    text-indent:0;
+
+    background-color: red;
+    border-radius: 12px;
+    color: white;
+    display: block;
+    font-family: 'bree_peruregular';
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    opacity: 0;
+    text-decoration: none;
+    text-align: center;
+    top: 230px;
+    left: 64px;
+    width: 220px;
+}
+
+
+.categorias li.cat img{
+    width: 146px;
+    height: auto;
+    left: 50%;
+    margin-left: -73px;
+    top: 50% !important;
+}
+
+#cat_caminar{background-image: url(../img/fondo1.jpg);background-position: center -65px;}
+#cat_bailar{background-image: url(../img/fondo2.jpg);background-position: center -65px;}
+#cat_volar{background-image: url(../img/fondo3.jpg);background-position: center -65px;}
+
+.tituloReelDesk{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: 'BentonSansCondBook';
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    top: 50% !important;
+    margin-top: -55px;
+}
+
+.subtit {
+    left: auto !important;
+    right: 0px !important;
+    bottom: 10px !important;
+    font-size: 17px !important;
+    font-family: 'bree_peruregular' !important;
+    margin: 0px 30px 0 0 !important;
+    text-align: right !important;
+}
 
 .trama {
 	width: 100%;
@@ -1025,9 +1086,189 @@ video.videoLoop {
 	height: 100%;
 }
 
+/*-----*/
+.cerrarMenu {
+    width: 60px;
+    height: 60px;
+    /* background-color: #fff; */
+    color: #fff;
+    line-height: 60px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    margin: 36px 0px 0px 0px;
+    font-size: 30px;
+}
+.abrirMenu {
+   width: 60px;
+    height: 60px;
+    /* background-color: #fff; */
+    color: #fff;
+    line-height: 60px;
+    position: absolute;
+    z-index: 10;
+    /* opacity: 0.3; */
+    margin: 7px;
+    font-size: 30px;
+}
+
+.abrirMenu > i {
+/*        margin: 50px;*/
+}
+
+.fondomenu {
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-image: url(../img/tramaMenu.gif);
+    opacity: 0.9;
+/*        z-index: 10;*/
+    top: -100px;
+}
+.conteMenu {
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: 10;
+    left: -350px;
+    padding-top: 120px;
+}
+.conteMenu>p{
+    color: #fff;
+    position: absolute;
+    width: 290px;
+    font-size: 11px;
+    font-family: Arial;
+    bottom: 130px;
+    left: 25px;
+}
+.separador{
+    width: 280px;
+    height: 25px;
+    display: block;
+    border-bottom: solid 1px #fff;
+    opacity: 0.7;
+    margin: auto;
+    position: relative;
+}
+.botonSolicita {
+    width: 280px;
+    height: 62px;
+    color: #fff;
+    background-color: #153370;
+    margin: 35px auto;
+    position: relative;
+    display: block;
+    line-height: 62px;
+/*        border: solid 2px #fff;*/
+    border-radius: 31px;
+    font-family: 'BentonSansCondBold';
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.botonSolicita:hover {
+    background-color: #001d4b;
+}
+.botonSolicita>i{
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin: 22px 22px 22px 0px;
+}
+.botonM {
+    width: 250px;
+    height: 58px;
+    color: #fff;
+    margin: 25px auto 15px auto;
+    position: relative;
+    display: block;
+    line-height: 58px;
+    border: solid 2px #fff;
+    border-radius: 29px;
+    font-family: 'BentonSansCondBold';
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.botonM:hover {
+    background-color: rgba(184, 147, 49, 0.4);
+}
+.botonM>i{
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin: 22px 22px 22px 0px;
+}
+.menuDerecha{
+    display: none;
+}
+.fondoSection{
+    width: 100%;
+    height: 100%;
+/*        background-image: url(../img/wall1.jpg);*/
+    display: block;
+    background-size:cover;
+    background-position: center;
+}
+.fondoVida{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size:cover;
+    background-position: center;
+}
+
+.contenidos{
+    width: 980px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -290px;
+    margin-left: -490px;
+/*        border: solid 1px red;*/
+    text-align: left;
+}
+
+.menuTabs {
+    width: 100%;
+    height: 73px;
+    margin-top: 38px;
+}
+.menuTabs>div{
+    width: 32%;
+    height: 69px;
+/*        background-color: rgba(227,179,79,.5);*/
+    border: solid 2px #f1ce7a;
+    border-radius: 18px 18px 0 0;
+    float: left;
+    font-size: 20px;
+    font-family: 'BentonSansCondMedium';
+    color: white;
+    text-align: left;
+}
+.menuTabs>div>img{
+    width: 17px;
+    height: auto;
+    position: absolute;
+    margin: 15px 0 0 12px;
+}
+.menuTabs>div:first-child{    margin-right: 12px;    }
+.menuTabs>div:last-child{    margin-left: 12px;    }
+
+.menuTabs>div>p{
+    margin: 12px 0 0 35px;
+    letter-spacing: -0.4px;
+    width: 260px;
+}
+
 /* Tablets */
 @media(min-width: 720px) {
-    body {
+    /*body {
         background-color: #fff;
     }
 
@@ -1082,7 +1323,7 @@ video.videoLoop {
 	.redes>a>img{
 		width: 40px;
 		height: auto;
-	}
+	}*/
 }
 
 /* -------------------------------------- */
@@ -1090,6 +1331,13 @@ video.videoLoop {
 /* -------------------------------------- */
 
 @media(min-width: 1200px) {
+    .cabecera>.logo{
+		width: 587px;
+		height: 79px;
+		right: 20px;
+		top: 24px;
+        background-image: url(../img/logoHeader.png);
+	}
 	.tituloHome{
 		font-size: 30px;
         color: #f1ce7a;
@@ -1109,7 +1357,7 @@ video.videoLoop {
         letter-spacing: -0.5px;
 	}
 
-	.redes{
+	/*.redes{
 		text-align: center;
         margin: auto;
         left: 95px;
@@ -1127,7 +1375,7 @@ video.videoLoop {
 	.redes>div>img{
 		width: 22px;
 		height: auto;
-	}
+	}*/
     
     
     .redesHeader{
@@ -1227,6 +1475,7 @@ video.videoLoop {
         font-family: 'BentonSansExtraLight';
         z-index: 5;
         margin-top: -30px;
+        display: block;
     }
     .menuDerecha>div{
         padding: 20px 0 35px 0;
